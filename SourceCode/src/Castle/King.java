@@ -1,5 +1,10 @@
 package Castle;
-import Kingdom.*;
+import Gems.Gem;
+import Logger.Catalogue;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class King implements Runnable
 {
@@ -22,8 +27,63 @@ public class King implements Runnable
 Include relevant printouts using the Logger.Catalogue class.
    */
 
+  private TreasureRoomDoor treasureRoomDoor;
+  private String name;
+  private Random random;
+
+  public King(TreasureRoomDoor treasureRoomDoor, String name)
+  {
+    this.treasureRoomDoor = treasureRoomDoor;
+    this.name = name;
+    this.random = new Random();
+  }
+
   @Override public void run()
   {
+    while (true){
+      try{
+
+        int partyCost = random.nextInt(101) + 50; // between 50 and 150
+        Catalogue.getInstance().log("King " + name + " is planning a party! He needs " + partyCost + " worth of gems.");
+
+        treasureRoomDoor.releaseWriteAccess(name);
+
+        Gem gem;
+        int totalGemsCollected = 0;
+        List<Gem> gatheredGems = new ArrayList<>();
+
+        while ((gem = treasureRoomDoor.retrieveValuable())!=null){
+          gatheredGems.add(gem);
+          totalGemsCollected+=gem.getValue();
+          if(totalGemsCollected>=partyCost){
+            break;
+          }
+
+          //Select gem time simulation
+          Thread.sleep(1000);
+
+          if (totalGemsCollected >= partyCost)
+          {
+            Catalogue.getInstance().log("King "+name+" collected enough gems: "+totalGemsCollected+". THROWING PARTY! :) ");
+          }else{
+            Catalogue.getInstance().log("King "+name+" didn't have enough gems... : "+totalGemsCollected+". CANCELING PARTY :( ");
+            for (Gem v: gatheredGems)
+            {
+              // Putting the gems back since they were not spent and simulate the time it takes to put them back
+              treasureRoomDoor.addValuable(v);
+            }
+            Catalogue.getInstance().log("Putting gems back...");
+            Thread.sleep(1000);
+          }
+
+          treasureRoomDoor.releaseWriteAccess(name);
+          Catalogue.getInstance().log("King "+name+" is eepy and takes a nap (release write access).");
+          Thread.sleep(4000);
+        }
+      }catch (InterruptedException e){
+        e.printStackTrace();
+      }
+    }
 
   }
 }

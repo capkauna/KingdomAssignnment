@@ -1,22 +1,22 @@
-package Castle;
-import Gems.Gem;
+  package Castle;
+  import Gems.Gem;
 
-import java.util.List;
+  import java.util.List;
 
-public interface TreasureRoomDoor {
+  public interface TreasureRoomDoor {
 
-  void acquireReadAccess(String actorName);
+    void acquireReadAccess(String actorName);
 
-  void acquireWriteAccess(String actorName);
+    void acquireWriteAccess(String actorName);
 
-  void releaseReadAccess(String actorName);
+    void releaseReadAccess(String actorName);
 
-  void releaseWriteAccess(String actorName);
+    void releaseWriteAccess(String actorName);
 
-  Gem retrieveValuable();
+    Gem retrieveValuable();
 
-  void addValuable(Gem v);
+    void addValuable(Gem v);
 
-  List<Gem> lookAtAllGems();
+    List<Gem> lookAtAllGems();
 
-}
+  }

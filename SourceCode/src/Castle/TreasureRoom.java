@@ -16,19 +16,19 @@ public class TreasureRoom implements TreasureRoomDoor {
   // access methods
 
   public synchronized void acquireReadAccess(String actorName) {
-    // note in the catalogue a person entered
+    Logger.Catalogue.getInstance().log(actorName + " acquired READ access to the Treasure Room.");
   }
 
   public synchronized void acquireWriteAccess(String actorName) {
-    // note in the catalogue a person entered
+    Logger.Catalogue.getInstance().log(actorName + " acquired WRITE access to the Treasure Room.");
   }
 
   public synchronized void releaseReadAccess(String actorName) {
-    // note in the catalogue a person left
+    Logger.Catalogue.getInstance().log(actorName + " released READ access to the Treasure Room.");
   }
 
   public synchronized void releaseWriteAccess(String actorName) {
-    // note in the catalogue a person left
+    Logger.Catalogue.getInstance().log(actorName + " released WRITE access to the Treasure Room.");
   }
 
   // interact methods
