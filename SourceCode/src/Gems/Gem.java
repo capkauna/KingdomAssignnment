@@ -1,4 +1,4 @@
-package Kingdom;
+package Gems;
 
 public interface Gem
 {

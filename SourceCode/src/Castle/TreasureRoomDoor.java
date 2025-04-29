@@ -1,5 +1,5 @@
 package Castle;
-import Kingdom.*;
+import Gems.Gem;
 
 import java.util.List;
 

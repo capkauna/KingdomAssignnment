@@ -22,7 +22,7 @@ public class MyArrayList<T> implements ListADT<T>
    * elements.
    */
   @SuppressWarnings("unchecked")
-  public MyArrayList()
+  public MyArrayList(Object gem)
   {
     list = (T[]) new Object[DEFAULT_CAPACITY];
     size = 0;
