@@ -11,7 +11,7 @@ public class TreasureRoom implements TreasureRoomDoor {
     gems = new ArrayList<>();
   }
 
-  //Swap out the comments in the methods with relevant calls to the Catalogue
+  //Swap out the comments in the methods with relevant calls to the Logger.Catalogue
 
   // access methods
 

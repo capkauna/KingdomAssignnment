@@ -12,7 +12,7 @@ public class GemMine
   can be multiton-like (the list of objects is accessed through the GemMine but the objects are of type Gem)
   can be a simple collection instance that all workers are assigned to in their constructor
 
-  In relevant places you should have the Catalogue print out what is happening so you can follow along.
+  In relevant places you should have the Logger.Catalogue print out what is happening so you can follow along.
    */
 
   private static final Map<String, Gem> gemMap = new HashMap<>();
@@ -32,7 +32,7 @@ public class GemMine
   }
 
   public static Gem getGem(String name) {
-    return gemMap.get(name);
+    return gemMap.get(name);//this returns the exact gem object, but that's boring and unrealistic
   }
   public static Gem mineGem(){
     int index = random.nextInt(weightedGems.size());

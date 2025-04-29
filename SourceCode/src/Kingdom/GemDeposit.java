@@ -1,6 +1,10 @@
 package Kingdom;
 
-public class GemDeposit implements BlockingQueue
+import Gems.Gem;
+import Logger.Catalogue;
+import MyArrayList.MyArrayList;
+
+public class GemDeposit implements BlockingQueue<Gem>
 {
 
   /*

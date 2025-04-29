@@ -2,15 +2,17 @@ package Gems;
 
 public enum GemType
 {
-  DIAMOND("Diamond", 100, 1),
-  EMERALD("Emerald", 50, 10),
-  RUBY("Ruby", 30, 15),
-  SAPPHIRE("Sapphire", 70, 5),
-  AMETHYST("Amethyst", 20, 50),
-  GOLDNUGGET("Gold Nugget", 10, 65),
-  WOODENCOIN("Wooden Coin", 1, 85),
-  COW ("Cow", -1, 3),
-  GHOST("Scary ghost", -3,2);
+  DIAMOND("Diamond", 100, 3),
+  EMERALD("Emerald", 50, 40),
+  RUBY("Ruby", 30, 55),
+  SAPPHIRE("Sapphire", 70, 35),
+  AMETHYST("Amethyst", 20, 100),
+  GOLDNUGGET("Gold Nugget", 10, 165),
+  WOODENCOIN("Wooden Coin", 1, 185),
+  COW ("Cow", -1, 15),
+  PRINCESS("Princess", -12, 3),
+  UNICORN("Unicorn", -35, 1),
+  GHOST("Scary ghost", -3,66);
 
 
   private final String name;

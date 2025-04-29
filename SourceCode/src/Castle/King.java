@@ -19,7 +19,7 @@ public class King implements Runnable
   7. After a party, he needs to sleep! Sleep for a while
   8. Start over from step 1
 
-Include relevant printouts using the Catalogue class.
+Include relevant printouts using the Logger.Catalogue class.
    */
 
   @Override public void run()

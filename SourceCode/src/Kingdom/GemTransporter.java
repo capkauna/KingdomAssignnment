@@ -11,7 +11,7 @@ public class GemTransporter implements Runnable
       4. Then, for now, just clear the container (currently we have no place to put them, this will come later!)
       5. Sleep for a little while
       6. Go back to step 1
-In relevant places you should have the Catalogue print out what is happening so you can follow along.
+In relevant places you should have the Logger.Catalogue print out what is happening so you can follow along.
 
 in step 2 update step 4 to reference the TreasureRoomDoor and use it to insert gems one at a time into the TreasureRoom
 

@@ -13,11 +13,11 @@ public class Accountant implements Runnable
 
   Acquire read access
   Count the total worth of all Gems in the TreasureRoom (use sleep to simulate it takes time to count the Gems)
-  Print out the total worth (using the Catalogue class)
+  Print out the total worth (using the Logger.Catalogue class)
   Release read access
   Sleep for a little while
 
-Include relevant printouts using the Catalogue class.
+Include relevant printouts using the Logger.Catalogue class.
    */
 
   @Override public void run()

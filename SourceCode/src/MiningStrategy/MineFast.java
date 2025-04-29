@@ -2,8 +2,9 @@ package MiningStrategy;
 
 import Gems.Gem;
 
-public class MineSlow implements MiningStrategy
+public class MineFast implements MiningStrategy
 {
+
   @Override public boolean shouldMine(Gem gem)
   {
     return true;
@@ -11,7 +12,6 @@ public class MineSlow implements MiningStrategy
 
   @Override public void rest() throws InterruptedException
   {
-    Thread.sleep(3000);
+    Thread.sleep(1000);
   }
-
 }
