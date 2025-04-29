@@ -39,7 +39,7 @@ public class GemMineWorker implements Runnable
         }
         else
         {
-          System.out.println("Gem thrown.");
+          System.out.println("Gem thrown."); // For now
           Thread.sleep(200);
         }
       }
