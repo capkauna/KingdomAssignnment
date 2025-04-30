@@ -16,19 +16,19 @@ public class TreasureRoom implements TreasureRoomDoor {
   // access methods
 
   public synchronized void acquireReadAccess(String actorName) {
-    Logger.Catalogue.getInstance().log(actorName + " acquired READ access to the Treasure Room.");
+    Logger.Catalogue.getInstance().log(actorName + " was allowed access to looking at the Treasure Room.");
   }
 
   public synchronized void acquireWriteAccess(String actorName) {
-    Logger.Catalogue.getInstance().log(actorName + " acquired WRITE access to the Treasure Room.");
+    Logger.Catalogue.getInstance().log(actorName + " was given handling access to the Treasure Room.");
   }
 
   public synchronized void releaseReadAccess(String actorName) {
-    Logger.Catalogue.getInstance().log(actorName + " released READ access to the Treasure Room.");
+    Logger.Catalogue.getInstance().log(actorName + " finished looking through the Treasure Room.");
   }
 
   public synchronized void releaseWriteAccess(String actorName) {
-    Logger.Catalogue.getInstance().log(actorName + " released WRITE access to the Treasure Room.");
+    Logger.Catalogue.getInstance().log(actorName + " finished managing the Treasure Room.");
   }
 
   // interact methods
@@ -38,15 +38,22 @@ public class TreasureRoom implements TreasureRoomDoor {
     if (gems.size() > 0) {
       v = gems.remove(0);
     }
+    if (v == null) {
+      Logger.Catalogue.getInstance().log("No gems in the Treasure Room.");
+      return null;
+    }
+    Logger.Catalogue.getInstance().log(v.getName() + " was taken from the Treasure Room.");
     return v;
   }
 
   public void addValuable(Gem v) {
     gems.add(v);
+    Logger.Catalogue.getInstance().log(v.getName() + " was added to the Treasure Room.");
   }
 
   @Override
   public List<Gem> lookAtAllGems() {
+    Logger.Catalogue.getInstance().log("Looking at all the gems in the Treasure Room." + gems.size() + " gems found.");
     return new ArrayList<Gem>(gems);
   }
 }

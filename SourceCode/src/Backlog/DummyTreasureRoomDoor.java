@@ -1,6 +1,8 @@
+package Backlog;
+
 import Gems.Gem;
 
-public class DummyTreasureRoom implements Castle.TreasureRoomDoor
+public class DummyTreasureRoomDoor implements Castle.TreasureRoomDoor
 {
   @Override public java.util.List<Gems.Gem> lookAtAllGems()
   {

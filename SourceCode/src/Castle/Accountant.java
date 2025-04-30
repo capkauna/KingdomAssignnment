@@ -30,31 +30,64 @@ Include relevant printouts using the Logger.Catalogue class.
     this.treasureRoomDoor = treasureRoomDoor;
     this.name = name;
   }
-
-  @Override public void run()
-  {
-    while (true){
-      try{
+  @Override
+  public void run() {
+    while (true) {
+      try {
         treasureRoomDoor.acquireReadAccess(name);
+        try {
+          List<Gem> gems = treasureRoomDoor.lookAtAllGems();
+          int totalValue = 0;
+          for (Gem gem : gems) {
+            totalValue += gem.getValue();
+          }
 
-        List<Gem> gems = treasureRoomDoor.lookAtAllGems();
-        int totalValue = 0;
-        for (Gem gem : gems) {
-          totalValue += gem.getValue();
+          Catalogue.getInstance().log(" . . . Counting . . .");
+          Thread.sleep(2000);
+          Catalogue.getInstance().log("Accountant " + name + " counted total worth: " + totalValue);
+        } finally {
+          treasureRoomDoor.releaseReadAccess(name);
         }
 
-        Catalogue.getInstance().log(" . . . Counting . . .");
-        Thread.sleep(2000);
-        Catalogue.getInstance().log(name + " counted total worth: " + totalValue);
-        treasureRoomDoor.releaseReadAccess(name);
-        Catalogue.getInstance().log(" . . . Nap time . . . before counting again . . .");
-        Thread.sleep(3000); // Sleep for a little while before counting again
-
-      }catch (InterruptedException e){
-        throw new RuntimeException(e);
+        Thread.sleep(5000); // Sleep for a little while before counting again
+      } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+        Catalogue.getInstance().log(name + " was interrupted while counting. Exiting...");
+        break;
       }
     }
-
   }
+
+//  @Override public void run()
+//  {
+//    while (true){
+//      try{
+//        treasureRoomDoor.acquireReadAccess(name);
+//
+//        List<Gem> gems = treasureRoomDoor.lookAtAllGems();
+//        int totalValue = 0;
+//        for (Gem gem : gems) {
+//          totalValue += gem.getValue();
+//        }
+//
+//        Catalogue.getInstance().log(" . . . Counting . . .");
+//        Thread.sleep(2000);
+//        Catalogue.getInstance().log("Accountant " + name + " counted total worth: " + totalValue);
+//        System.out.println("Accountant " + name + " counted total worth: " + totalValue);
+//
+//        treasureRoomDoor.releaseReadAccess(name);
+//
+//        Catalogue.getInstance().log("Accountant " + name +" is taking a nap . . . before counting again . . .");
+//        System.out.println("Accountant " + name +" is taking a nap . . . before counting again . . .");
+//        Thread.sleep(5000); // Sleep for a little while before counting again
+//
+//      }
+//
+//      catch (InterruptedException e){
+//        throw new RuntimeException(e);
+//      }
+//    }
+//
+//  }
 
 }

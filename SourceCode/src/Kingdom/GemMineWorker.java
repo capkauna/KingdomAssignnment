@@ -65,7 +65,7 @@ public class GemMineWorker implements Runnable
             case CHILD ->
                 {
                   Catalogue.getInstance().log("The children yearn for the mines...");
-                  System.out.println(gem.getName() + "! Is our scary old man guard on lunch break again?");
+                  System.out.println(gem.getName() + "?! Is our scary old man guard on lunch break again?");
                 }
 
             default -> {

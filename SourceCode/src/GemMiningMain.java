@@ -9,7 +9,7 @@ Run the program and inspect the console output.
      */
 
 
-import Castle.TreasureRoomDoor;
+import Castle.*;
 import MiningStrategy.*;
 import Kingdom.*;
 import Logger.Catalogue;
@@ -21,8 +21,9 @@ public class GemMiningMain{
     Catalogue log = Catalogue.getInstance();
     log.log("=== GEM MINING SIMULATION STARTED ===");
 
-    GemDeposit gemDeposit = new GemDeposit(20); // capacity = 20
-    TreasureRoomDoor dummyDoor = new DummyTreasureRoom();
+    GemDeposit gemDeposit = new GemDeposit(25); // capacity = 20
+    TreasureRoomDoor treasureRoom = new TreasureRoom();
+    TreasureRoomDoor guard = new TreasureRoomGuard(treasureRoom);
 
     // Create mining strategies
     MiningStrategy fastStrategy = new MineFast();
@@ -37,8 +38,8 @@ public class GemMiningMain{
     GemMineWorker worker4 = new GemMineWorker(gemDeposit, casualStrategy);
 
     // Create transporters
-    GemTransporter transporter1 = new GemTransporter("Cart 1", gemDeposit, dummyDoor);
-    GemTransporter transporter2 = new GemTransporter("Cart 2", gemDeposit, dummyDoor);
+    GemTransporter transporter1 = new GemTransporter("Cart 1", gemDeposit, guard);
+    GemTransporter transporter2 = new GemTransporter("Cart 2", gemDeposit, guard);
 
     // Start threads
     Thread w1 = new Thread(worker1, "Worker 1");
@@ -55,7 +56,21 @@ public class GemMiningMain{
     t1.start();
     t2.start();
 
-    log.log("All workers and transporters started.");
+    log.log("All workers and transporters started working.");
+
+    // Create accountant and king
+    Accountant accountant = new Accountant(guard, "Billy");
+    King king = new King(guard, "Louie");
+
+    // Start accountant and king threads
+    Thread accountantThread = new Thread(accountant, "The accountant");
+    Thread kingThread = new Thread(king, "The King");
+
+    accountantThread.start();
+    kingThread.start();
+
+    log.log("The King and the accountant are up and about.");
+
   }
 }
 

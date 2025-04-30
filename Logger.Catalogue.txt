@@ -1,523 +1,798 @@
 1. === GEM MINING SIMULATION STARTED ===
-2. All workers and transporters started.
-3. : New target to collect= 76
-4. : New target to collect= 160
-5. Added gem: 20
-6. Taking gem: 20
-7. Queue empty. Consumer waiting... 
-8. Added gem: 50
-9. Gem mined: Amethyst
-10. Taking gem: 50
-11. Gem mined: Emerald
-12. : Picked up Emerald worth 50. Current total = 50
-13. Queue empty. Consumer waiting... 
-14. : Picked up Amethyst worth 20. Current total = 20
-15. Queue empty. Consumer waiting... 
-16. Added gem: 20
-17. Gem mined: Amethyst
-18. Taking gem: 20
-19. : Picked up Amethyst worth 20. Current total = 70
-20. Queue empty. Consumer waiting... 
-21. Queue empty. Consumer waiting... 
-22. Added gem: 1
-23. A wooden coin... It keeps saying it's a real coin.
-24. Taking gem: 1
-25. Queue empty. Consumer waiting... 
-26. : Picked up Wooden Coin worth 1. Current total = 21
-27. Queue empty. Consumer waiting... 
-28. Added gem: -1
-29. Who keeps bringing their cow to work?
-30. Taking gem: -1
-31. : Picked up Cow worth -1. Current total = 69
-32. Queue empty. Consumer waiting... 
-33. Added gem: 50
-34. Gem mined: Emerald
-35. Taking gem: 50
-36. : Picked up Emerald worth 50. Current total = 71
-37. Queue empty. Consumer waiting... 
-38. Queue empty. Consumer waiting... 
-39. Added gem: 20
-40. Gem mined: Amethyst
-41. Taking gem: 20
-42. Queue empty. Consumer waiting... 
-43. : Picked up Amethyst worth 20. Current total = 89
-44. : Target reached, total worth = 89
-45. : Transporting gems to TreasureRoom.....
-46. : Deposited Emerald worth50
-47. : Deposited Amethyst worth20
-48. : Deposited Cow worth-1
-49. : Deposited Amethyst worth20
-50. : Transporting done. Sleeping....
-51. Added gem: 30
-52. Gem mined: Ruby
-53. Taking gem: 30
-54. : Picked up Ruby worth 30. Current total = 101
-55. Queue empty. Consumer waiting... 
-56. : New target to collect= 84
-57. Queue empty. Consumer waiting... 
-58. Added gem: 1
-59. A wooden coin... It keeps saying it's a real coin.
-60. Taking gem: 1
-61. : Picked up Wooden Coin worth 1. Current total = 102
-62. Queue empty. Consumer waiting... 
-63. Queue empty. Consumer waiting... 
-64. Added gem: 1
-65. A wooden coin... It keeps saying it's a real coin.
-66. Taking gem: 1
-67. Queue empty. Consumer waiting... 
-68. : Picked up Wooden Coin worth 1. Current total = 1
-69. Queue empty. Consumer waiting... 
-70. Added gem: 1
-71. A wooden coin... It keeps saying it's a real coin.
-72. Taking gem: 1
-73. : Picked up Wooden Coin worth 1. Current total = 103
-74. Queue empty. Consumer waiting... 
-75. Queue empty. Consumer waiting... 
-76. Added gem: 20
-77. Gem mined: Amethyst
-78. Taking gem: 20
-79. : Picked up Amethyst worth 20. Current total = 21
-80. Queue empty. Consumer waiting... 
-81. Queue empty. Consumer waiting... 
-82. Added gem: 1
-83. A wooden coin... It keeps saying it's a real coin.
-84. Taking gem: 1
-85. : Picked up Wooden Coin worth 1. Current total = 104
-86. Queue empty. Consumer waiting... 
-87. Queue empty. Consumer waiting... 
-88. Added gem: 50
-89. Gem mined: Emerald
-90. Taking gem: 50
-91. Queue empty. Consumer waiting... 
-92. : Picked up Emerald worth 50. Current total = 71
-93. Queue empty. Consumer waiting... 
-94. Added gem: 10
-95. Gold nugget! We're rich!
-96. Taking gem: 10
-97. : Picked up Gold Nugget worth 10. Current total = 114
-98. Queue empty. Consumer waiting... 
-99. Queue empty. Consumer waiting... 
-100. Added gem: 1
-101. A wooden coin... It keeps saying it's a real coin.
-102. Taking gem: 1
-103. : Picked up Wooden Coin worth 1. Current total = 72
-104. Queue empty. Consumer waiting... 
-105. Queue empty. Consumer waiting... 
-106. Added gem: 1
-107. A wooden coin... It keeps saying it's a real coin.
-108. Taking gem: 1
-109. : Picked up Wooden Coin worth 1. Current total = 115
-110. Queue empty. Consumer waiting... 
-111. Queue empty. Consumer waiting... 
-112. Added gem: 30
-113. Gem mined: Ruby
-114. Taking gem: 30
-115. : Picked up Ruby worth 30. Current total = 102
-116. : Target reached, total worth = 102
-117. : Transporting gems to TreasureRoom.....
-118. : Deposited Wooden Coin worth1
-119. : Deposited Amethyst worth20
-120. : Deposited Emerald worth50
-121. : Deposited Wooden Coin worth1
-122. : Deposited Ruby worth30
-123. : Transporting done. Sleeping....
-124. Queue empty. Consumer waiting... 
-125. Added gem: 1
-126. A wooden coin... It keeps saying it's a real coin.
-127. Taking gem: 1
-128. : Picked up Wooden Coin worth 1. Current total = 116
-129. Queue empty. Consumer waiting... 
-130. : New target to collect= 149
-131. Queue empty. Consumer waiting... 
-132. Added gem: 70
-133. Gem mined: Sapphire
-134. Taking gem: 70
-135. : Picked up Sapphire worth 70. Current total = 186
-136. : Target reached, total worth = 186
-137. : Transporting gems to TreasureRoom.....
-138. : Deposited Amethyst worth20
-139. : Deposited Wooden Coin worth1
-140. : Deposited Emerald worth50
-141. : Deposited Ruby worth30
-142. : Deposited Wooden Coin worth1
-143. : Deposited Wooden Coin worth1
-144. : Deposited Wooden Coin worth1
-145. : Deposited Gold Nugget worth10
-146. : Deposited Wooden Coin worth1
-147. : Deposited Wooden Coin worth1
-148. : Deposited Sapphire worth70
-149. : Transporting done. Sleeping....
-150. Queue empty. Consumer waiting... 
-151. Added gem: 20
-152. Gem mined: Amethyst
-153. Taking gem: 20
-154. : Picked up Amethyst worth 20. Current total = 20
-155. Queue empty. Consumer waiting... 
-156. Added gem: 70
-157. Gem mined: Sapphire
-158. Taking gem: 70
-159. : Picked up Sapphire worth 70. Current total = 90
-160. Queue empty. Consumer waiting... 
-161. : New target to collect= 139
-162. Queue empty. Consumer waiting... 
-163. Added gem: 20
-164. Gem mined: Amethyst
-165. Taking gem: 20
-166. : Picked up Amethyst worth 20. Current total = 110
-167. Queue empty. Consumer waiting... 
-168. Queue empty. Consumer waiting... 
-169. Added gem: 1
-170. A wooden coin... It keeps saying it's a real coin.
-171. Taking gem: 1
-172. : Picked up Wooden Coin worth 1. Current total = 1
-173. Queue empty. Consumer waiting... 
-174. Queue empty. Consumer waiting... 
-175. Added gem: 20
-176. Gem mined: Amethyst
-177. Taking gem: 20
-178. : Picked up Amethyst worth 20. Current total = 130
-179. Queue empty. Consumer waiting... 
-180. Queue empty. Consumer waiting... 
-181. Added gem: 1
-182. A wooden coin... It keeps saying it's a real coin.
-183. Taking gem: 1
-184. Queue empty. Consumer waiting... 
-185. : Picked up Wooden Coin worth 1. Current total = 2
-186. Queue empty. Consumer waiting... 
-187. Added gem: -3
-188. This mine is haunted! Someone call the Ghostbusters!
-189. Taking gem: -3
-190. Queue empty. Consumer waiting... 
-191. : Picked up Scary ghost worth -3. Current total = 127
-192. Queue empty. Consumer waiting... 
-193. Added gem: 70
-194. Gem mined: Sapphire
-195. Taking gem: 70
-196. : Picked up Sapphire worth 70. Current total = 72
-197. Queue empty. Consumer waiting... 
-198. Queue empty. Consumer waiting... 
-199. Added gem: 1
-200. A wooden coin... It keeps saying it's a real coin.
-201. Taking gem: 1
-202. Queue empty. Consumer waiting... 
-203. : Picked up Wooden Coin worth 1. Current total = 128
-204. Queue empty. Consumer waiting... 
-205. Added gem: 30
-206. Gem mined: Ruby
-207. Taking gem: 30
-208. Queue empty. Consumer waiting... 
-209. : Picked up Ruby worth 30. Current total = 102
-210. Queue empty. Consumer waiting... 
-211. Added gem: 1
-212. A wooden coin... It keeps saying it's a real coin.
-213. Taking gem: 1
-214. : Picked up Wooden Coin worth 1. Current total = 129
-215. Queue empty. Consumer waiting... 
-216. Queue empty. Consumer waiting... 
-217. Added gem: 1
-218. A wooden coin... It keeps saying it's a real coin.
-219. Taking gem: 1
-220. Queue empty. Consumer waiting... 
-221. : Picked up Wooden Coin worth 1. Current total = 103
-222. Queue empty. Consumer waiting... 
-223. Added gem: 10
-224. Gold nugget! We're rich!
-225. Taking gem: 10
-226. : Picked up Gold Nugget worth 10. Current total = 139
-227. Queue empty. Consumer waiting... 
-228. Queue empty. Consumer waiting... 
-229. Added gem: 10
-230. Gold nugget! We're rich!
-231. Taking gem: 10
-232. : Picked up Gold Nugget worth 10. Current total = 113
-233. Queue empty. Consumer waiting... 
-234. Queue empty. Consumer waiting... 
-235. Added gem: 1
-236. A wooden coin... It keeps saying it's a real coin.
-237. Taking gem: 1
-238. : Picked up Wooden Coin worth 1. Current total = 140
-239. Queue empty. Consumer waiting... 
-240. Queue empty. Consumer waiting... 
-241. Added gem: 10
-242. Gold nugget! We're rich!
-243. Taking gem: 10
-244. : Picked up Gold Nugget worth 10. Current total = 123
-245. Queue empty. Consumer waiting... 
-246. Queue empty. Consumer waiting... 
-247. Added gem: 20
-248. Gem mined: Amethyst
-249. Taking gem: 20
-250. : Picked up Amethyst worth 20. Current total = 160
-251. : Target reached, total worth = 160
-252. : Transporting gems to TreasureRoom.....
-253. : Deposited Amethyst worth20
-254. : Deposited Sapphire worth70
-255. : Deposited Amethyst worth20
-256. : Deposited Amethyst worth20
-257. : Deposited Scary ghost worth-3
-258. : Deposited Wooden Coin worth1
-259. : Deposited Wooden Coin worth1
-260. : Deposited Gold Nugget worth10
-261. : Deposited Wooden Coin worth1
-262. : Deposited Amethyst worth20
-263. : Transporting done. Sleeping....
-264. Queue empty. Consumer waiting... 
-265. Added gem: 10
-266. Gold nugget! We're rich!
-267. Taking gem: 10
-268. : Picked up Gold Nugget worth 10. Current total = 133
-269. Queue empty. Consumer waiting... 
-270. : New target to collect= 180
-271. Queue empty. Consumer waiting... 
-272. Added gem: 1
-273. A wooden coin... It keeps saying it's a real coin.
-274. Taking gem: 1
-275. : Picked up Wooden Coin worth 1. Current total = 134
-276. Queue empty. Consumer waiting... 
-277. Queue empty. Consumer waiting... 
-278. Added gem: 1
-279. A wooden coin... It keeps saying it's a real coin.
-280. Taking gem: 1
-281. Queue empty. Consumer waiting... 
-282. : Picked up Wooden Coin worth 1. Current total = 1
-283. Queue empty. Consumer waiting... 
-284. Added gem: 10
-285. Gold nugget! We're rich!
-286. Taking gem: 10
-287. : Picked up Gold Nugget worth 10. Current total = 144
-288. : Target reached, total worth = 144
-289. : Transporting gems to TreasureRoom.....
-290. : Deposited Wooden Coin worth1
-291. : Deposited Wooden Coin worth1
-292. : Deposited Sapphire worth70
-293. : Deposited Ruby worth30
-294. : Deposited Wooden Coin worth1
-295. : Deposited Gold Nugget worth10
-296. : Deposited Gold Nugget worth10
-297. : Deposited Gold Nugget worth10
-298. : Deposited Wooden Coin worth1
-299. : Deposited Gold Nugget worth10
-300. : Transporting done. Sleeping....
-301. Queue empty. Consumer waiting... 
-302. Added gem: -3
-303. This mine is haunted! Someone call the Ghostbusters!
-304. Taking gem: -3
-305. : Picked up Scary ghost worth -3. Current total = -2
-306. Queue empty. Consumer waiting... 
-307. : New target to collect= 144
-308. Queue empty. Consumer waiting... 
-309. Added gem: -1
-310. Who keeps bringing their cow to work?
-311. Taking gem: -1
-312. : Picked up Cow worth -1. Current total = -3
-313. Queue empty. Consumer waiting... 
-314. Queue empty. Consumer waiting... 
-315. Added gem: -3
-316. This mine is haunted! Someone call the Ghostbusters!
-317. Taking gem: -3
-318. : Picked up Scary ghost worth -3. Current total = -3
-319. Queue empty. Consumer waiting... 
-320. Queue empty. Consumer waiting... 
-321. Added gem: 20
-322. Gem mined: Amethyst
-323. Taking gem: 20
-324. Queue empty. Consumer waiting... 
-325. : Picked up Amethyst worth 20. Current total = 17
-326. Queue empty. Consumer waiting... 
-327. Added gem: 20
-328. Gem mined: Amethyst
-329. Taking gem: 20
-330. : Picked up Amethyst worth 20. Current total = 17
-331. Queue empty. Consumer waiting... 
-332. Queue empty. Consumer waiting... 
-333. Added gem: 10
-334. Gold nugget! We're rich!
-335. Taking gem: 10
-336. : Picked up Gold Nugget worth 10. Current total = 27
-337. Queue empty. Consumer waiting... 
-338. Queue empty. Consumer waiting... 
-339. Added gem: -35
-340. Are there any princesses here? Why is there a unicorn?
-341. Taking gem: -35
-342. : Picked up Unicorn worth -35. Current total = -18
-343. Queue empty. Consumer waiting... 
-344. Queue empty. Consumer waiting... 
-345. Added gem: 10
-346. Gold nugget! We're rich!
-347. Taking gem: 10
-348. : Picked up Gold Nugget worth 10. Current total = 37
-349. Queue empty. Consumer waiting... 
-350. Queue empty. Consumer waiting... 
-351. Added gem: 30
-352. Gem mined: Ruby
-353. Taking gem: 30
-354. : Picked up Ruby worth 30. Current total = 12
-355. Queue empty. Consumer waiting... 
-356. Queue empty. Consumer waiting... 
-357. Added gem: 1
-358. A wooden coin... It keeps saying it's a real coin.
-359. Taking gem: 1
-360. : Picked up Wooden Coin worth 1. Current total = 38
-361. Queue empty. Consumer waiting... 
-362. Queue empty. Consumer waiting... 
-363. Added gem: -3
-364. This mine is haunted! Someone call the Ghostbusters!
-365. Taking gem: -3
-366. Queue empty. Consumer waiting... 
-367. : Picked up Scary ghost worth -3. Current total = 9
-368. Queue empty. Consumer waiting... 
-369. Added gem: 50
-370. Gem mined: Emerald
-371. Taking gem: 50
-372. Queue empty. Consumer waiting... 
-373. : Picked up Emerald worth 50. Current total = 88
-374. Queue empty. Consumer waiting... 
-375. Added gem: -35
-376. Are there any princesses here? Why is there a unicorn?
-377. Taking gem: -35
-378. : Picked up Unicorn worth -35. Current total = -26
-379. Queue empty. Consumer waiting... 
-380. Queue empty. Consumer waiting... 
-381. Added gem: 50
-382. Gem mined: Emerald
-383. Taking gem: 50
-384. : Picked up Emerald worth 50. Current total = 138
-385. Queue empty. Consumer waiting... 
-386. Queue empty. Consumer waiting... 
-387. === GEM MINING SIMULATION STARTED ===
-388. All workers and transporters started.
+2. All workers and transporters started working.
+3. The King and the accountant are up and about.
+4. A wooden coin... It keeps saying it's a real coin.
+5. Gem mined: Amethyst
+6. Billy was allowed access to looking at the Treasure Room.
+7. Gem mined: Ruby
+8. Cart 2 starts with a collection target of 178
+9. Cart 1 starts with a collection target of 128
+10. King Louie is planning a party! He needs 143 worth of gems.
+11. Looking at all the gems in the Treasure Room.0 gems found.
+12. Added Wooden Coin.
+13.  . . . Counting . . .
+14. Taking Wooden Coin from deposit. 
+15. Deposit empty. Cart waiting... 
+16. Added Ruby.
+17. Added Amethyst.
+18. Taking Ruby from deposit. 
+19. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 1
+20. Cart 2: Picked up Ruby [worth 30]. Current total = 30
+21. Taking Amethyst from deposit. 
+22. Cart 1: Picked up Amethyst [worth 20]. Current total = 21
+23. Deposit empty. Cart waiting... 
+24. Deposit empty. Cart waiting... 
+25. Gold nugget! We're rich!
+26. Added Gold Nugget.
+27. Taking Gold Nugget from deposit. 
+28. Deposit empty. Cart waiting... 
+29. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 60
+30. Deposit empty. Cart waiting... 
+31. Gem mined: Amethyst
+32. Added Amethyst.
+33. Taking Amethyst from deposit. 
+34. Cart 1: Picked up Amethyst [worth 20]. Current total = 41
+35. Deposit empty. Cart waiting... 
+36. Deposit empty. Cart waiting... 
+37. Accountant Billy counted total worth: 0
+38. Billy finished looking through the Treasure Room.
+39. Louie was given handling access to the Treasure Room.
+40. No gems in the Treasure Room.
+41. Accountant Billy is taking a nap . . . before counting again . . .
+42. Louie finished managing the Treasure Room.
+43. King Louie is eepy and takes a nap (release write access).
+44. Gold nugget! We're rich!
+45. Added Gold Nugget.
+46. Taking Gold Nugget from deposit. 
+47. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 90
+48. Deposit empty. Cart waiting... 
+49. Deposit empty. Cart waiting... 
+50. Gem mined: Emerald
+51. Added Emerald.
+52. Taking Emerald from deposit. 
+53. Deposit empty. Cart waiting... 
+54. Cart 1: Picked up Emerald [worth 50]. Current total = 91
+55. Deposit empty. Cart waiting... 
+56. Who keeps bringing their cow to work?
+57. Added Cow.
+58. Taking Cow from deposit. 
+59. Deposit empty. Cart waiting... 
+60. Cart 2: Picked up Cow [worth -1]. Current total = 89
+61. Deposit empty. Cart waiting... 
+62. Gold nugget! We're rich!
+63. Added Gold Nugget.
+64. Taking Gold Nugget from deposit. 
+65. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 121
+66. Deposit empty. Cart waiting... 
+67. Deposit empty. Cart waiting... 
+68. Gold nugget! We're rich!
+69. Added Gold Nugget.
+70. Taking Gold Nugget from deposit. 
+71. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 119
+72. Deposit empty. Cart waiting... 
+73. Deposit empty. Cart waiting... 
+74. Gold nugget! We're rich!
+75. Added Gold Nugget.
+76. Taking Gold Nugget from deposit. 
+77. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 151
+78. Deposit empty. Cart waiting... 
+79. Cart 1 reached collection target, total worth = 151
+80. Cart 1 was given handling access to the Treasure Room.
+81. Cart 1 is transporting gems to TreasureRoom...
+82. Wooden Coin was added to the Treasure Room.
+83. Cart 1 deposited Wooden Coin [worth 1]
+84. Amethyst was added to the Treasure Room.
+85. Cart 1 deposited Amethyst [worth 20]
+86. Amethyst was added to the Treasure Room.
+87. Cart 1 deposited Amethyst [worth 20]
+88. Emerald was added to the Treasure Room.
+89. Cart 1 deposited Emerald [worth 50]
+90. Gold Nugget was added to the Treasure Room.
+91. Cart 1 deposited Gold Nugget [worth 30]
+92. Gold Nugget was added to the Treasure Room.
+93. Cart 1 deposited Gold Nugget [worth 30]
+94. Cart 1 finished managing the Treasure Room.
+95. Cart 1: Transporting done. New target worth for next transport set to 142. Sleeping for now...
+96. Gold nugget! We're rich!
+97. King Louie is planning a party! He needs 75 worth of gems.
+98. Louie was given handling access to the Treasure Room.
+99. Added Gold Nugget.
+100. Wooden Coin was taken from the Treasure Room.
+101. Taking Gold Nugget from deposit. 
+102. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 149
+103. Deposit empty. Cart waiting... 
+104. Gold nugget! We're rich!
+105. Added Gold Nugget.
+106. Taking Gold Nugget from deposit. 
+107. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 179
+108. Cart 2 reached collection target, total worth = 179
+109. Cart 1 starts with a collection target of 142
+110. Deposit empty. Cart waiting... 
+111. Gem mined: Sapphire
+112. Added Sapphire.
+113. Taking Sapphire from deposit. 
+114. Cart 1: Picked up Sapphire [worth 70]. Current total = 70
+115. Deposit empty. Cart waiting... 
+116. King Louie didn't have enough gems... : 1. CANCELING PARTY :( 
+117. Wooden Coin was added to the Treasure Room.
+118. Putting gems back...
+119. Gold nugget! We're rich!
+120. Added Gold Nugget.
+121. Taking Gold Nugget from deposit. 
+122. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 100
+123. Deposit empty. Cart waiting... 
+124. Gold nugget! We're rich!
+125. Added Gold Nugget.
+126. Taking Gold Nugget from deposit. 
+127. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 130
+128. Deposit empty. Cart waiting... 
+129. Gem mined: Amethyst
+130. Added Amethyst.
+131. Taking Amethyst from deposit. 
+132. Cart 1: Picked up Amethyst [worth 20]. Current total = 150
+133. Cart 1 reached collection target, total worth = 150
+134. Gold nugget! We're rich!
+135. Added Gold Nugget.
+136. A wooden coin... It keeps saying it's a real coin.
+137. Added Wooden Coin.
+138. Gold nugget! We're rich!
+139. Added Gold Nugget.
+140. Gem mined: Sapphire
+141. Added Sapphire.
+142. Gold nugget! We're rich!
+143. Added Gold Nugget.
+144. The children yearn for the mines...
+145. Added A child.
+146. Gold nugget! We're rich!
+147. Added Gold Nugget.
+148. Gem mined: Amethyst
+149. Added Amethyst.
+150. Gold nugget! We're rich!
+151. Added Gold Nugget.
+152. A wooden coin... It keeps saying it's a real coin.
+153. Added Wooden Coin.
+154. Gold nugget! We're rich!
+155. Added Gold Nugget.
+156. Gold nugget! We're rich!
+157. Added Gold Nugget.
+158. Gem mined: Amethyst
+159. Added Amethyst.
+160. A wooden coin... It keeps saying it's a real coin.
+161. Added Wooden Coin.
+162. Amethyst was taken from the Treasure Room.
+163. Gold nugget! We're rich!
+164. Added Gold Nugget.
+165. A wooden coin... It keeps saying it's a real coin.
+166. Added Wooden Coin.
+167. Gold nugget! We're rich!
+168. Added Gold Nugget.
+169. Gold nugget! We're rich!
+170. Added Gold Nugget.
+171. Gem mined: Sapphire
+172. Added Sapphire.
+173. King Louie didn't have enough gems... : 21. CANCELING PARTY :( 
+174. Wooden Coin was added to the Treasure Room.
+175. Amethyst was added to the Treasure Room.
+176. Putting gems back...
+177. Gem mined: Ruby
+178. Added Ruby.
+179. Gem mined: Ruby
+180. Added Ruby.
+181. Gem mined: Emerald
+182. Added Emerald.
+183. Gem mined: Ruby
+184. Added Ruby.
+185. Gold nugget! We're rich!
+186. Added Gold Nugget.
+187. Gold nugget! We're rich!
+188. Added Gold Nugget.
+189. Gem mined: Emerald
+190. Deposit full. Waiting to be emptied... 
+191. Gem mined: Amethyst
+192. Deposit full. Waiting to be emptied... 
+193. Gold nugget! We're rich!
+194. Deposit full. Waiting to be emptied... 
+195. Gem mined: Emerald
+196. Deposit full. Waiting to be emptied... 
+197. Amethyst was taken from the Treasure Room.
+198. King Louie didn't have enough gems... : 41. CANCELING PARTY :( 
+199. Wooden Coin was added to the Treasure Room.
+200. Amethyst was added to the Treasure Room.
+201. Amethyst was added to the Treasure Room.
+202. Putting gems back...
+203. Emerald was taken from the Treasure Room.
+204. Louie finished managing the Treasure Room.
+205. King Louie is eepy and takes a nap (release write access).
+206. Cart 2 was given handling access to the Treasure Room.
+207. Cart 2 is transporting gems to TreasureRoom...
+208. Ruby was added to the Treasure Room.
+209. Cart 2 deposited Ruby [worth 30]
+210. Gold Nugget was added to the Treasure Room.
+211. Cart 2 deposited Gold Nugget [worth 30]
+212. Gold Nugget was added to the Treasure Room.
+213. Cart 2 deposited Gold Nugget [worth 30]
+214. Cow was added to the Treasure Room.
+215. Cart 2 deposited Cow [worth -1]
+216. Gold Nugget was added to the Treasure Room.
+217. Cart 2 deposited Gold Nugget [worth 30]
+218. Gold Nugget was added to the Treasure Room.
+219. Cart 2 deposited Gold Nugget [worth 30]
+220. Gold Nugget was added to the Treasure Room.
+221. Cart 2 deposited Gold Nugget [worth 30]
+222. Cart 2 finished managing the Treasure Room.
+223. Cart 2: Transporting done. New target worth for next transport set to 103. Sleeping for now...
+224. Cart 1 was given handling access to the Treasure Room.
+225. Cart 1 is transporting gems to TreasureRoom...
+226. Sapphire was added to the Treasure Room.
+227. Cart 1 deposited Sapphire [worth 70]
+228. Gold Nugget was added to the Treasure Room.
+229. Cart 1 deposited Gold Nugget [worth 30]
+230. Gold Nugget was added to the Treasure Room.
+231. Cart 1 deposited Gold Nugget [worth 30]
+232. Amethyst was added to the Treasure Room.
+233. Cart 1 deposited Amethyst [worth 20]
+234. Cart 1 finished managing the Treasure Room.
+235. Cart 1: Transporting done. New target worth for next transport set to 121. Sleeping for now...
+236. Billy was allowed access to looking at the Treasure Room.
+237. Looking at all the gems in the Treasure Room.19 gems found.
+238.  . . . Counting . . .
+239. Cart 1 starts with a collection target of 121
+240. Taking Gold Nugget from deposit. 
+241. Cart 2 starts with a collection target of 103
+242. Added Emerald.
+243. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 30
+244. Taking Wooden Coin from deposit. 
+245. Cart 2: Picked up Wooden Coin [worth 1]. Current total = 1
+246. Added Emerald.
+247. Deposit full. Waiting to be emptied... 
+248. Deposit full. Waiting to be emptied... 
+249. Taking Gold Nugget from deposit. 
+250. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 31
+251. Taking Sapphire from deposit. 
+252. Cart 1: Picked up Sapphire [worth 70]. Current total = 100
+253. Taking Gold Nugget from deposit. 
+254. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 61
+255. Added Amethyst.
+256. Added Gold Nugget.
+257. Taking A child from deposit. 
+258. Cart 2: Picked up A child [worth -10]. Current total = 51
+259. Taking Gold Nugget from deposit. 
+260. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 130
+261. Taking Amethyst from deposit. 
+262. Cart 1 reached collection target, total worth = 130
+263. Cart 2: Picked up Amethyst [worth 20]. Current total = 71
+264. Taking Gold Nugget from deposit. 
+265. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 101
+266. Taking Wooden Coin from deposit. 
+267. Cart 2: Picked up Wooden Coin [worth 1]. Current total = 102
+268. Taking Gold Nugget from deposit. 
+269. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 132
+270. Cart 2 reached collection target, total worth = 132
+271. Accountant Billy counted total worth: 452
+272. Billy finished looking through the Treasure Room.
+273. Accountant Billy is taking a nap . . . before counting again . . .
+274. Cart 1 was given handling access to the Treasure Room.
+275. Cart 1 is transporting gems to TreasureRoom...
+276. Gold Nugget was added to the Treasure Room.
+277. Cart 1 deposited Gold Nugget [worth 30]
+278. Sapphire was added to the Treasure Room.
+279. Cart 1 deposited Sapphire [worth 70]
+280. Gold Nugget was added to the Treasure Room.
+281. Cart 1 deposited Gold Nugget [worth 30]
+282. Cart 1 finished managing the Treasure Room.
+283. Cart 1: Transporting done. New target worth for next transport set to 179. Sleeping for now...
+284. Cart 2 was given handling access to the Treasure Room.
+285. Cart 2 is transporting gems to TreasureRoom...
+286. Wooden Coin was added to the Treasure Room.
+287. Cart 2 deposited Wooden Coin [worth 1]
+288. Gold Nugget was added to the Treasure Room.
+289. Cart 2 deposited Gold Nugget [worth 30]
+290. Gold Nugget was added to the Treasure Room.
+291. Cart 2 deposited Gold Nugget [worth 30]
+292. A child was added to the Treasure Room.
+293. Cart 2 deposited A child [worth -10]
+294. Amethyst was added to the Treasure Room.
+295. Cart 2 deposited Amethyst [worth 20]
+296. Gold Nugget was added to the Treasure Room.
+297. Cart 2 deposited Gold Nugget [worth 30]
+298. Wooden Coin was added to the Treasure Room.
+299. Cart 2 deposited Wooden Coin [worth 1]
+300. Gold Nugget was added to the Treasure Room.
+301. Cart 2 deposited Gold Nugget [worth 30]
+302. Cart 2 finished managing the Treasure Room.
+303. Cart 2: Transporting done. New target worth for next transport set to 87. Sleeping for now...
+304. Gold nugget! We're rich!
+305. Added Gold Nugget.
+306. Cart 1 starts with a collection target of 179
+307. Taking Gold Nugget from deposit. 
+308. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 30
+309. Taking Amethyst from deposit. 
+310. Cart 1: Picked up Amethyst [worth 20]. Current total = 50
+311. Taking Wooden Coin from deposit. 
+312. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 51
+313. Taking Gold Nugget from deposit. 
+314. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 81
+315. Taking Wooden Coin from deposit. 
+316. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 82
+317. Taking Gold Nugget from deposit. 
+318. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 112
+319. Taking Gold Nugget from deposit. 
+320. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 142
+321. Taking Sapphire from deposit. 
+322. Cart 1: Picked up Sapphire [worth 70]. Current total = 212
+323. Cart 1 reached collection target, total worth = 212
+324. Cart 1 was given handling access to the Treasure Room.
+325. Cart 1 is transporting gems to TreasureRoom...
+326. Gold Nugget was added to the Treasure Room.
+327. Cart 1 deposited Gold Nugget [worth 30]
+328. Amethyst was added to the Treasure Room.
+329. Cart 1 deposited Amethyst [worth 20]
+330. Wooden Coin was added to the Treasure Room.
+331. Cart 1 deposited Wooden Coin [worth 1]
+332. Gold Nugget was added to the Treasure Room.
+333. Cart 1 deposited Gold Nugget [worth 30]
+334. Wooden Coin was added to the Treasure Room.
+335. Cart 1 deposited Wooden Coin [worth 1]
+336. Gold Nugget was added to the Treasure Room.
+337. Cart 1 deposited Gold Nugget [worth 30]
+338. Gold Nugget was added to the Treasure Room.
+339. Cart 1 deposited Gold Nugget [worth 30]
+340. Sapphire was added to the Treasure Room.
+341. Cart 1 deposited Sapphire [worth 70]
+342. Cart 1 finished managing the Treasure Room.
+343. Cart 1: Transporting done. New target worth for next transport set to 119. Sleeping for now...
+344. Gold nugget! We're rich!
+345. Cart 2 starts with a collection target of 87
+346. Added Gold Nugget.
+347. Taking Ruby from deposit. 
+348. Cart 2: Picked up Ruby [worth 30]. Current total = 30
+349. Taking Ruby from deposit. 
+350. Cart 2: Picked up Ruby [worth 30]. Current total = 60
+351. Taking Emerald from deposit. 
+352. Cart 2: Picked up Emerald [worth 50]. Current total = 110
+353. Cart 2 reached collection target, total worth = 110
+354. Cart 2 was given handling access to the Treasure Room.
+355. Cart 2 is transporting gems to TreasureRoom...
+356. Ruby was added to the Treasure Room.
+357. Cart 2 deposited Ruby [worth 30]
+358. Ruby was added to the Treasure Room.
+359. Cart 2 deposited Ruby [worth 30]
+360. Emerald was added to the Treasure Room.
+361. Cart 2 deposited Emerald [worth 50]
+362. Cart 2 finished managing the Treasure Room.
+363. Cart 2: Transporting done. New target worth for next transport set to 88. Sleeping for now...
+364. King Louie is planning a party! He needs 134 worth of gems.
+365. Louie was given handling access to the Treasure Room.
+366. Gold Nugget was taken from the Treasure Room.
+367. A wooden coin... It keeps saying it's a real coin.
+368. Added Wooden Coin.
+369. Cart 1 starts with a collection target of 119
+370. Taking Ruby from deposit. 
+371. Cart 1: Picked up Ruby [worth 30]. Current total = 30
+372. Taking Gold Nugget from deposit. 
+373. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 60
+374. Taking Gold Nugget from deposit. 
+375. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 90
+376. Taking Emerald from deposit. 
+377. Cart 1: Picked up Emerald [worth 50]. Current total = 140
+378. Cart 1 reached collection target, total worth = 140
+379. Gold nugget! We're rich!
+380. Cart 2 starts with a collection target of 88
+381. Added Gold Nugget.
+382. Taking Emerald from deposit. 
+383. Cart 2: Picked up Emerald [worth 50]. Current total = 50
+384. Taking Amethyst from deposit. 
+385. Cart 2: Picked up Amethyst [worth 20]. Current total = 70
+386. Taking Gold Nugget from deposit. 
+387. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 100
+388. Cart 2 reached collection target, total worth = 100
 389. Gold nugget! We're rich!
-390. Gold nugget! We're rich!
-391. Gem mined: Ruby
-392. A wooden coin... It keeps saying it's a real coin.
-393. Cart 2: New target to collect= 188
-394. Cart 1: New target to collect= 183
-395. Added Gold Nugget.
-396. Taking Gold Nuggetfrom deposit. 
-397. Deposit empty. Cart waiting... 
-398. Added Wooden Coin.
-399. Added Ruby.
-400. Added Gold Nugget.
-401. Taking Wooden Coinfrom deposit. 
-402. Cart 1: Picked up Gold Nugget worth 10. Current total = 10
-403. Cart 2: Picked up Wooden Coin worth 1. Current total = 1
-404. Taking Rubyfrom deposit. 
-405. Cart 1: Picked up Ruby worth 30. Current total = 40
-406. Taking Gold Nuggetfrom deposit. 
-407. Deposit empty. Cart waiting... 
-408. Cart 2: Picked up Gold Nugget worth 10. Current total = 11
-409. Deposit empty. Cart waiting... 
-410. Gem mined: Ruby
-411. Added Ruby.
-412. Taking Rubyfrom deposit. 
-413. Cart 1: Picked up Ruby worth 30. Current total = 70
+390. Added Gold Nugget.
+391. Gold nugget! We're rich!
+392. Added Gold Nugget.
+393. === GEM MINING SIMULATION STARTED ===
+394. All workers and transporters started working.
+395. The King and the accountant are up and about.
+396. Gem mined: Emerald
+397. Gem mined: Amethyst
+398. Gem mined: Amethyst
+399. Billy was allowed access to looking at the Treasure Room.
+400. Cart 2 starts with a collection target of 110
+401. Added Emerald.
+402. King Louie is planning a party! He needs 126 worth of gems.
+403. Cart 1 starts with a collection target of 66
+404. Taking Emerald from deposit. 
+405. Looking at all the gems in the Treasure Room.0 gems found.
+406. Added Amethyst.
+407.  . . . Counting . . .
+408. Added Amethyst.
+409. Taking Amethyst from deposit. 
+410. Cart 1: Picked up Amethyst [worth 20]. Current total = 20
+411. Cart 2: Picked up Emerald [worth 50]. Current total = 50
+412. Taking Amethyst from deposit. 
+413. Cart 1: Picked up Amethyst [worth 20]. Current total = 40
 414. Deposit empty. Cart waiting... 
 415. Deposit empty. Cart waiting... 
 416. Gold nugget! We're rich!
 417. Added Gold Nugget.
-418. Taking Gold Nuggetfrom deposit. 
+418. Taking Gold Nugget from deposit. 
 419. Deposit empty. Cart waiting... 
-420. Cart 2: Picked up Gold Nugget worth 10. Current total = 21
+420. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 80
 421. Deposit empty. Cart waiting... 
-422. A wooden coin... It keeps saying it's a real coin.
-423. Added Wooden Coin.
-424. Taking Wooden Coinfrom deposit. 
-425. Cart 1: Picked up Wooden Coin worth 1. Current total = 71
+422. Gold nugget! We're rich!
+423. Added Gold Nugget.
+424. Taking Gold Nugget from deposit. 
+425. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 70
 426. Deposit empty. Cart waiting... 
-427. Deposit empty. Cart waiting... 
-428. Gem mined: Ruby
-429. Added Ruby.
-430. Taking Rubyfrom deposit. 
-431. Cart 2: Picked up Ruby worth 30. Current total = 51
-432. Deposit empty. Cart waiting... 
-433. Deposit empty. Cart waiting... 
-434. Gold nugget! We're rich!
-435. Gold nugget! We're rich!
-436. Added Gold Nugget.
-437. Taking Gold Nuggetfrom deposit. 
-438. Cart 1: Picked up Gold Nugget worth 10. Current total = 81
-439. Deposit empty. Cart waiting... 
-440. Added Gold Nugget.
-441. Taking Gold Nuggetfrom deposit. 
-442. Deposit empty. Cart waiting... 
-443. Cart 2: Picked up Gold Nugget worth 10. Current total = 61
-444. Deposit empty. Cart waiting... 
-445. This mine is haunted! Someone call the Ghostbusters!
-446. Added Scary ghost.
-447. Taking Scary ghostfrom deposit. 
-448. Cart 1: Picked up Scary ghost worth -3. Current total = 78
-449. Deposit empty. Cart waiting... 
-450. Deposit empty. Cart waiting... 
-451. Gem mined: Amethyst
-452. Added Amethyst.
-453. Taking Amethystfrom deposit. 
-454. Cart 2: Picked up Amethyst worth 20. Current total = 81
-455. Deposit empty. Cart waiting... 
-456. Deposit empty. Cart waiting... 
-457. Gem mined: Amethyst
-458. Added Amethyst.
-459. Taking Amethystfrom deposit. 
-460. Cart 1: Picked up Amethyst worth 20. Current total = 98
-461. Deposit empty. Cart waiting... 
-462. Deposit empty. Cart waiting... 
-463. This mine is haunted! Someone call the Ghostbusters!
-464. Added Scary ghost.
-465. Taking Scary ghostfrom deposit. 
-466. Deposit empty. Cart waiting... 
-467. Cart 2: Picked up Scary ghost worth -3. Current total = 78
-468. Deposit empty. Cart waiting... 
-469. Gem mined: Amethyst
-470. Added Amethyst.
-471. Taking Amethystfrom deposit. 
-472. Deposit empty. Cart waiting... 
-473. Cart 1: Picked up Amethyst worth 20. Current total = 118
-474. Deposit empty. Cart waiting... 
-475. A wooden coin... It keeps saying it's a real coin.
-476. Added Wooden Coin.
-477. Taking Wooden Coinfrom deposit. 
-478. Cart 2: Picked up Wooden Coin worth 1. Current total = 79
-479. Deposit empty. Cart waiting... 
-480. Deposit empty. Cart waiting... 
-481. Gem mined: Emerald
-482. Added Emerald.
-483. Taking Emeraldfrom deposit. 
-484. Cart 1: Picked up Emerald worth 50. Current total = 168
-485. Deposit empty. Cart waiting... 
-486. Deposit empty. Cart waiting... 
-487. Gold nugget! We're rich!
-488. Added Gold Nugget.
-489. Taking Gold Nuggetfrom deposit. 
-490. Cart 2: Picked up Gold Nugget worth 10. Current total = 89
-491. Deposit empty. Cart waiting... 
-492. Deposit empty. Cart waiting... 
-493. Gem mined: Amethyst
-494. Added Amethyst.
-495. Taking Amethystfrom deposit. 
-496. Cart 1: Picked up Amethyst worth 20. Current total = 188
-497. Deposit empty. Cart waiting... 
-498. Cart 1: Target reached, total worth = 188
-499. Cart 1: Transporting gems to TreasureRoom.....
-500. Cart 1: Deposited Gold Nugget worth10
-501. Cart 1: Deposited Ruby worth30
-502. Cart 1: Deposited Ruby worth30
-503. Cart 1: Deposited Wooden Coin worth1
-504. Cart 1: Deposited Gold Nugget worth10
-505. Cart 1: Deposited Scary ghost worth-3
-506. Cart 1: Deposited Amethyst worth20
-507. Cart 1: Deposited Amethyst worth20
-508. Cart 1: Deposited Emerald worth50
-509. Cart 1: Deposited Amethyst worth20
-510. Cart 1: Transporting done. New target worth for next transport set to 156. Sleeping for now...
-511. Gold nugget! We're rich!
-512. Added Gold Nugget.
-513. Taking Gold Nuggetfrom deposit. 
-514. Cart 2: Picked up Gold Nugget worth 10. Current total = 99
-515. Deposit empty. Cart waiting... 
-516. Cart 1: New target to collect= 156
-517. Deposit empty. Cart waiting... 
-518. Who keeps bringing their cow to work?
-519. Added Cow.
-520. Taking Cowfrom deposit. 
-521. Deposit empty. Cart waiting... 
-522. Cart 2: Picked up Cow worth -1. Current total = 98
-523. Deposit empty. Cart waiting... 
+427. Cart 1 reached collection target, total worth = 70
+428. Accountant Billy counted total worth: 0
+429. Billy finished looking through the Treasure Room.
+430. Louie was given handling access to the Treasure Room.
+431. No gems in the Treasure Room.
+432. King Louie didn't have enough gems... CANCELING PARTY :(
+433. Gem mined: Ruby
+434. Added Ruby.
+435. Taking Ruby from deposit. 
+436. Cart 2: Picked up Ruby [worth 30]. Current total = 110
+437. Cart 2 reached collection target, total worth = 110
+438. Gem mined: Amethyst
+439. Added Amethyst.
+440. Gem mined: Diamond
+441. Added Diamond.
+442. Gold nugget! We're rich!
+443. Added Gold Nugget.
+444. Who keeps bringing their cow to work?
+445. Added Cow.
+446. A wooden coin... It keeps saying it's a real coin.
+447. Added Wooden Coin.
+448. A wooden coin... It keeps saying it's a real coin.
+449. Added Wooden Coin.
+450. Gem mined: Amethyst
+451. Added Amethyst.
+452. Gold nugget! We're rich!
+453. Added Gold Nugget.
+454. Gold nugget! We're rich!
+455. Added Gold Nugget.
+456. Gem mined: Amethyst
+457. Added Amethyst.
+458. Gem mined: Sapphire
+459. Added Sapphire.
+460. Gem mined: Emerald
+461. Added Emerald.
+462. This is no place for a princess!
+463. Added Princess.
+464. A wooden coin... It keeps saying it's a real coin.
+465. Added Wooden Coin.
+466. Gold nugget! We're rich!
+467. Added Gold Nugget.
+468. A wooden coin... It keeps saying it's a real coin.
+469. Added Wooden Coin.
+470. Louie finished managing the Treasure Room.
+471. Cart 1 was given handling access to the Treasure Room.
+472. Cart 1 is transporting gems to TreasureRoom...
+473. Amethyst was added to the Treasure Room.
+474. Cart 1 deposited Amethyst [worth 20]
+475. Amethyst was added to the Treasure Room.
+476. Cart 1 deposited Amethyst [worth 20]
+477. Gold Nugget was added to the Treasure Room.
+478. Cart 1 deposited Gold Nugget [worth 30]
+479. Cart 1 finished managing the Treasure Room.
+480. Billy was allowed access to looking at the Treasure Room.
+481. Looking at all the gems in the Treasure Room.3 gems found.
+482.  . . . Counting . . .
+483. Cart 1: Transporting done. New target worth for next transport set to 125. Sleeping for now...
+484. The children yearn for the mines...
+485. Added A child.
+486. Gem mined: Ruby
+487. Added Ruby.
+488. Cart 1 starts with a collection target of 125
+489. Taking Amethyst from deposit. 
+490. Cart 1: Picked up Amethyst [worth 20]. Current total = 20
+491. Taking Diamond from deposit. 
+492. Cart 1: Picked up Diamond [worth 100]. Current total = 120
+493. Taking Gold Nugget from deposit. 
+494. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 150
+495. Cart 1 reached collection target, total worth = 150
+496. A wooden coin... It keeps saying it's a real coin.
+497. Added Wooden Coin.
+498. Accountant Billy counted total worth: 70
+499. Billy finished looking through the Treasure Room.
+500. Cart 2 was given handling access to the Treasure Room.
+501. Cart 2 is transporting gems to TreasureRoom...
+502. Emerald was added to the Treasure Room.
+503. Cart 2 deposited Emerald [worth 50]
+504. Gold Nugget was added to the Treasure Room.
+505. Cart 2 deposited Gold Nugget [worth 30]
+506. Ruby was added to the Treasure Room.
+507. Cart 2 deposited Ruby [worth 30]
+508. Cart 2 finished managing the Treasure Room.
+509. Cart 1 was given handling access to the Treasure Room.
+510. Cart 1 is transporting gems to TreasureRoom...
+511. Cart 2: Transporting done. New target worth for next transport set to 90. Sleeping for now...
+512. Amethyst was added to the Treasure Room.
+513. Cart 1 deposited Amethyst [worth 20]
+514. Diamond was added to the Treasure Room.
+515. Cart 1 deposited Diamond [worth 100]
+516. Gold Nugget was added to the Treasure Room.
+517. Cart 1 deposited Gold Nugget [worth 30]
+518. Cart 1 finished managing the Treasure Room.
+519. Cart 1: Transporting done. New target worth for next transport set to 165. Sleeping for now...
+520. Gold nugget! We're rich!
+521. Added Gold Nugget.
+522. Gold nugget! We're rich!
+523. Added Gold Nugget.
+524. The children yearn for the mines...
+525. Cart 2 starts with a collection target of 90
+526. Cart 1 starts with a collection target of 165
+527. Added A child.
+528. Taking Cow from deposit. 
+529. Cart 1: Picked up Cow [worth -1]. Current total = -1
+530. Taking Wooden Coin from deposit. 
+531. Cart 2: Picked up Wooden Coin [worth 1]. Current total = 1
+532. Taking Wooden Coin from deposit. 
+533. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 0
+534. Taking Amethyst from deposit. 
+535. Cart 2: Picked up Amethyst [worth 20]. Current total = 21
+536. Taking Gold Nugget from deposit. 
+537. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 30
+538. Taking Gold Nugget from deposit. 
+539. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 51
+540. Taking Amethyst from deposit. 
+541. Cart 1: Picked up Amethyst [worth 20]. Current total = 50
+542. Taking Sapphire from deposit. 
+543. Taking Emerald from deposit. 
+544. Cart 2: Picked up Sapphire [worth 70]. Current total = 121
+545. Cart 1: Picked up Emerald [worth 50]. Current total = 100
+546. Cart 2 reached collection target, total worth = 121
+547. Taking Princess from deposit. 
+548. Cart 2 was given handling access to the Treasure Room.
+549. Cart 1: Picked up Princess [worth -20]. Current total = 80
+550. Cart 2 is transporting gems to TreasureRoom...
+551. Taking Wooden Coin from deposit. 
+552. Wooden Coin was added to the Treasure Room.
+553. Cart 2 deposited Wooden Coin [worth 1]
+554. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 81
+555. Amethyst was added to the Treasure Room.
+556. Cart 2 deposited Amethyst [worth 20]
+557. Taking Gold Nugget from deposit. 
+558. Gold Nugget was added to the Treasure Room.
+559. Cart 2 deposited Gold Nugget [worth 30]
+560. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 111
+561. Sapphire was added to the Treasure Room.
+562. Taking Wooden Coin from deposit. 
+563. Cart 2 deposited Sapphire [worth 70]
+564. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 112
+565. Cart 2 finished managing the Treasure Room.
+566. Taking A child from deposit. 
+567. Cart 2: Transporting done. New target worth for next transport set to 132. Sleeping for now...
+568. Cart 1: Picked up A child [worth -10]. Current total = 102
+569. Taking Ruby from deposit. 
+570. Cart 1: Picked up Ruby [worth 30]. Current total = 132
+571. Taking Wooden Coin from deposit. 
+572. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 133
+573. Taking Gold Nugget from deposit. 
+574. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 163
+575. Taking Gold Nugget from deposit. 
+576. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 193
+577. Cart 1 reached collection target, total worth = 193
+578. Cart 1 was given handling access to the Treasure Room.
+579. Cart 1 is transporting gems to TreasureRoom...
+580. Cow was added to the Treasure Room.
+581. Cart 1 deposited Cow [worth -1]
+582. Wooden Coin was added to the Treasure Room.
+583. Cart 1 deposited Wooden Coin [worth 1]
+584. Gold Nugget was added to the Treasure Room.
+585. Cart 1 deposited Gold Nugget [worth 30]
+586. Amethyst was added to the Treasure Room.
+587. Cart 1 deposited Amethyst [worth 20]
+588. Emerald was added to the Treasure Room.
+589. Cart 1 deposited Emerald [worth 50]
+590. Princess was added to the Treasure Room.
+591. Cart 1 deposited Princess [worth -20]
+592. Wooden Coin was added to the Treasure Room.
+593. Cart 1 deposited Wooden Coin [worth 1]
+594. Gold Nugget was added to the Treasure Room.
+595. Cart 1 deposited Gold Nugget [worth 30]
+596. Wooden Coin was added to the Treasure Room.
+597. Cart 1 deposited Wooden Coin [worth 1]
+598. A child was added to the Treasure Room.
+599. Cart 1 deposited A child [worth -10]
+600. Ruby was added to the Treasure Room.
+601. Cart 1 deposited Ruby [worth 30]
+602. Wooden Coin was added to the Treasure Room.
+603. Cart 1 deposited Wooden Coin [worth 1]
+604. Gold Nugget was added to the Treasure Room.
+605. Cart 1 deposited Gold Nugget [worth 30]
+606. Gold Nugget was added to the Treasure Room.
+607. Cart 1 deposited Gold Nugget [worth 30]
+608. Cart 1 finished managing the Treasure Room.
+609. Cart 1: Transporting done. New target worth for next transport set to 128. Sleeping for now...
+610. A wooden coin... It keeps saying it's a real coin.
+611. Added Wooden Coin.
+612. King Louie is planning a party! He needs 116 worth of gems.
+613. Louie was given handling access to the Treasure Room.
+614. Amethyst was taken from the Treasure Room.
+615. Cart 2 starts with a collection target of 132
+616. Taking A child from deposit. 
+617. Cart 2: Picked up A child [worth -10]. Current total = -10
+618. Taking Wooden Coin from deposit. 
+619. Cart 2: Picked up Wooden Coin [worth 1]. Current total = -9
+620. Deposit empty. Cart waiting... 
+621. Cart 1 starts with a collection target of 128
+622. Deposit empty. Cart waiting... 
+623. Gem mined: Amethyst
+624. Added Amethyst.
+625. Taking Amethyst from deposit. 
+626. Deposit empty. Cart waiting... 
+627. Cart 2: Picked up Amethyst [worth 20]. Current total = 11
+628. Deposit empty. Cart waiting... 
+629. A wooden coin... It keeps saying it's a real coin.
+630. Added Wooden Coin.
+631. Taking Wooden Coin from deposit. 
+632. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 1
+633. Deposit empty. Cart waiting... 
+634. Deposit empty. Cart waiting... 
+635. Gold nugget! We're rich!
+636. Added Gold Nugget.
+637. Taking Gold Nugget from deposit. 
+638. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 41
+639. Deposit empty. Cart waiting... 
+640. Deposit empty. Cart waiting... 
+641. Amethyst was taken from the Treasure Room.
+642. A wooden coin... It keeps saying it's a real coin.
+643. Added Wooden Coin.
+644. Taking Wooden Coin from deposit. 
+645. Deposit empty. Cart waiting... 
+646. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 2
+647. Deposit empty. Cart waiting... 
+648. Gem mined: Ruby
+649. Added Ruby.
+650. Taking Ruby from deposit. 
+651. Cart 2: Picked up Ruby [worth 30]. Current total = 71
+652. Deposit empty. Cart waiting... 
+653. Deposit empty. Cart waiting... 
+654. A wooden coin... It keeps saying it's a real coin.
+655. Added Wooden Coin.
+656. Taking Wooden Coin from deposit. 
+657. Deposit empty. Cart waiting... 
+658. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 3
+659. Deposit empty. Cart waiting... 
+660. Gold nugget! We're rich!
+661. Added Gold Nugget.
+662. Taking Gold Nugget from deposit. 
+663. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 101
+664. Deposit empty. Cart waiting... 
+665. Deposit empty. Cart waiting... 
+666. Gold Nugget was taken from the Treasure Room.
+667. Gem mined: Amethyst
+668. Added Amethyst.
+669. Taking Amethyst from deposit. 
+670. Deposit empty. Cart waiting... 
+671. Cart 1: Picked up Amethyst [worth 20]. Current total = 23
+672. Deposit empty. Cart waiting... 
+673. Gold nugget! We're rich!
+674. Added Gold Nugget.
+675. Taking Gold Nugget from deposit. 
+676. Deposit empty. Cart waiting... 
+677. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 131
+678. Deposit empty. Cart waiting... 
+679. Gold nugget! We're rich!
+680. Added Gold Nugget.
+681. Taking Gold Nugget from deposit. 
+682. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 53
+683. Deposit empty. Cart waiting... 
+684. Deposit empty. Cart waiting... 
+685. A wooden coin... It keeps saying it's a real coin.
+686. Added Wooden Coin.
+687. Taking Wooden Coin from deposit. 
+688. Deposit empty. Cart waiting... 
+689. Cart 2: Picked up Wooden Coin [worth 1]. Current total = 132
+690. Cart 2 reached collection target, total worth = 132
+691. Emerald was taken from the Treasure Room.
+692. King Louie collected enough gems: 120. THROWING PARTY! :)
+693. Louie finished managing the Treasure Room.
+694. Billy was allowed access to looking at the Treasure Room.
+695. Looking at all the gems in the Treasure Room.23 gems found.
+696.  . . . Counting . . .
+697. Gold nugget! We're rich!
+698. Added Gold Nugget.
+699. Taking Gold Nugget from deposit. 
+700. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 83
+701. Deposit empty. Cart waiting... 
+702. Gold nugget! We're rich!
+703. Added Gold Nugget.
+704. Taking Gold Nugget from deposit. 
+705. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 113
+706. Deposit empty. Cart waiting... 
+707. Gold nugget! We're rich!
+708. Added Gold Nugget.
+709. Taking Gold Nugget from deposit. 
+710. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 143
+711. Cart 1 reached collection target, total worth = 143
+712. Accountant Billy counted total worth: 524
+713. Billy finished looking through the Treasure Room.
+714. Cart 2 was given handling access to the Treasure Room.
+715. Cart 2 is transporting gems to TreasureRoom...
+716. A child was added to the Treasure Room.
+717. Cart 2 deposited A child [worth -10]
+718. Wooden Coin was added to the Treasure Room.
+719. Cart 2 deposited Wooden Coin [worth 1]
+720. Amethyst was added to the Treasure Room.
+721. Cart 2 deposited Amethyst [worth 20]
+722. Gold Nugget was added to the Treasure Room.
+723. Cart 2 deposited Gold Nugget [worth 30]
+724. Ruby was added to the Treasure Room.
+725. Cart 2 deposited Ruby [worth 30]
+726. Gold Nugget was added to the Treasure Room.
+727. Cart 2 deposited Gold Nugget [worth 30]
+728. Gold Nugget was added to the Treasure Room.
+729. Cart 2 deposited Gold Nugget [worth 30]
+730. Wooden Coin was added to the Treasure Room.
+731. Cart 2 deposited Wooden Coin [worth 1]
+732. Cart 2 finished managing the Treasure Room.
+733. Cart 2: Transporting done. New target worth for next transport set to 151. Sleeping for now...
+734. Cart 1 was given handling access to the Treasure Room.
+735. Cart 1 is transporting gems to TreasureRoom...
+736. Wooden Coin was added to the Treasure Room.
+737. Cart 1 deposited Wooden Coin [worth 1]
+738. Wooden Coin was added to the Treasure Room.
+739. Cart 1 deposited Wooden Coin [worth 1]
+740. Wooden Coin was added to the Treasure Room.
+741. Cart 1 deposited Wooden Coin [worth 1]
+742. Amethyst was added to the Treasure Room.
+743. Cart 1 deposited Amethyst [worth 20]
+744. Gold Nugget was added to the Treasure Room.
+745. Cart 1 deposited Gold Nugget [worth 30]
+746. Gold Nugget was added to the Treasure Room.
+747. Cart 1 deposited Gold Nugget [worth 30]
+748. Gold Nugget was added to the Treasure Room.
+749. Cart 1 deposited Gold Nugget [worth 30]
+750. Gold Nugget was added to the Treasure Room.
+751. Cart 1 deposited Gold Nugget [worth 30]
+752. Cart 1 finished managing the Treasure Room.
+753. Cart 1: Transporting done. New target worth for next transport set to 192. Sleeping for now...
+754. Gem mined: Ruby
+755. Added Ruby.
+756. Gem mined: Ruby
+757. Added Ruby.
+758. Cart 2 starts with a collection target of 151
+759. Taking Ruby from deposit. 
+760. Cart 2: Picked up Ruby [worth 30]. Current total = 30
+761. Taking Ruby from deposit. 
+762. Cart 2: Picked up Ruby [worth 30]. Current total = 60
+763. Deposit empty. Cart waiting... 
+764. Cart 1 starts with a collection target of 192
+765. Deposit empty. Cart waiting... 
+766. A wooden coin... It keeps saying it's a real coin.
+767. Added Wooden Coin.
+768. Taking Wooden Coin from deposit. 
+769. Cart 2: Picked up Wooden Coin [worth 1]. Current total = 61
+770. Deposit empty. Cart waiting... 
+771. Deposit empty. Cart waiting... 
+772. King Louie is planning a party! He needs 59 worth of gems.
+773. Louie was given handling access to the Treasure Room.
+774. Gold Nugget was taken from the Treasure Room.
+775. Gem mined: Ruby
+776. Added Ruby.
+777. Taking Ruby from deposit. 
+778. Cart 1: Picked up Ruby [worth 30]. Current total = 30
+779. Deposit empty. Cart waiting... 
+780. Deposit empty. Cart waiting... 
+781. Gold nugget! We're rich!
+782. Added Gold Nugget.
+783. Taking Gold Nugget from deposit. 
+784. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 91
+785. Deposit empty. Cart waiting... 
+786. Deposit empty. Cart waiting... 
+787. Gem mined: Amethyst
+788. Added Amethyst.
+789. Taking Amethyst from deposit. 
+790. Cart 1: Picked up Amethyst [worth 20]. Current total = 50
+791. Deposit empty. Cart waiting... 
+792. Deposit empty. Cart waiting... 
+793. Gem mined: Emerald
+794. Added Emerald.
+795. Taking Emerald from deposit. 
+796. Cart 2: Picked up Emerald [worth 50]. Current total = 141
+797. Deposit empty. Cart waiting... 
+798. Deposit empty. Cart waiting... 
