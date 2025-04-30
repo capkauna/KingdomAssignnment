@@ -27,12 +27,14 @@ public GemDeposit(int capacity){
 public void put(Gem gem) throws InterruptedException{
   synchronized (lock) {
     while (queue.size() >= capacity) {
-      Catalogue.getInstance().log("Queue full. Producer waiting... ");
+      Catalogue.getInstance().log("Deposit full. Waiting to be emptied... ");
+      System.out.println("Deposit full. Waiting to be emptied... ");
       lock.wait();
     }
 
     queue.add(gem);
-    Catalogue.getInstance().log("Added gem: " + gem.getValue());
+    Catalogue.getInstance().log("Added " + gem.getName() + ".");
+    System.out.println("Added " + gem.getName() + ".");
     lock.notifyAll();
   }
 }
@@ -40,11 +42,13 @@ public void put(Gem gem) throws InterruptedException{
 public Gem take() throws InterruptedException{
   synchronized (lock) {
     while (queue.isEmpty()){
-      Catalogue.getInstance().log("Queue empty. Consumer waiting... ");
+      Catalogue.getInstance().log("Deposit empty. Cart waiting... ");
+      System.out.println("Deposit empty. Cart waiting... ");
       lock.wait();
     }
     Gem gem = queue.remove(0);
-    Catalogue.getInstance().log("Taking gem: " + gem.getValue());
+    Catalogue.getInstance().log("Taking " + gem.getName() + " from deposit. ");
+    System.out.println("Taking " + gem.getName() + " from deposit. ");
     lock.notifyAll();
     return gem;
   }

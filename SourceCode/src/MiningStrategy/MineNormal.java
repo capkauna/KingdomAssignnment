@@ -11,6 +11,6 @@ public class MineNormal implements MiningStrategy
 
   @Override public void rest() throws InterruptedException
   {
-    Thread.sleep(1000);
+    Thread.sleep(3000);
   }
 }

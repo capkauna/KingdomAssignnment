@@ -24,7 +24,7 @@ public class GemMine
       GenericGem gg = new GenericGem(type);
       gemMap.put(type.getName(), gg);
 
-      //affecting the gem numbers by weight
+      //affecting the gem numbers by total weight
       for (int i = 0; i < type.getWeight(); i++) {
         weightedGems.add(gg);
       }
@@ -35,7 +35,7 @@ public class GemMine
     return gemMap.get(name);//this returns the exact gem object, but that's boring and unrealistic
   }
   public static Gem mineGem(){
-    int index = random.nextInt(weightedGems.size());
+    int index = random.nextInt(weightedGems.size());//this is far more believable and fun
     return weightedGems.get(index);
   }
 

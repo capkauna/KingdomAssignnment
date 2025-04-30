@@ -3,7 +3,6 @@ package Kingdom;
 import Castle.TreasureRoomDoor;
 import Gems.Gem;
 import Logger.Catalogue;
-import MyArrayList.MyArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,28 +21,28 @@ public class GemTransporter implements Runnable
   private String name = new String(); //i guess for loggin in acces method
 
 
-  public GemTransporter(GemDeposit gemDeposit,
+  public GemTransporter(String name, GemDeposit gemDeposit,
       TreasureRoomDoor treasureRoomDoor)
   {
     this.gemDeposit = gemDeposit;
     this.treasureRoomDoor = treasureRoomDoor;
     this.container = new ArrayList<>();
-    this.targetWorth = generateRandomTarget();
+    this.targetWorth = generateRandomTargetWorth();
     this.currentWorth = 0;
     this.catalogue = Catalogue.getInstance();
     this.name = name;
   }
 
-  private int generateRandomTarget()
+  private int generateRandomTargetWorth()
   {
     return (int) (Math.random() * (maxTargetWorth - minTargetWorth + 1))
         + minTargetWorth;
   }
-  private int generateTargetWorth()
-  {
-    return (int) (Math.random() * (maxTargetWorth - minTargetWorth + 1))
-        + minTargetWorth;
-  }
+//  private int generateTargetWorth() //does the same as above
+//  {
+//    return (int) (Math.random() * (maxTargetWorth - minTargetWorth + 1))
+//        + minTargetWorth;
+//  }
 
   /*
     the behaviour of the GemTransporter must be strictly as follows:`
@@ -74,35 +73,43 @@ Make sure the List in GemTransporter is cleared when don
          container.add(gem);
          currentWorth += gem.getValue();
          catalogue.log(name + ": Picked up " + gem.getName() + " worth " + gem.getValue() + ". Current total = " + currentWorth);
+         System.out.println(name + ": Picked up " + gem.getName() + " worth " + gem.getValue() + ". Current total = " + currentWorth);
        }
         catalogue.log(name + ": Target reached, total worth = " + currentWorth);
+        System.out.println(name + ": Target reached, total worth = " + currentWorth);
 
        treasureRoomDoor.acquireWriteAccess(name);
        catalogue.log(name + ": Transporting gems to TreasureRoom.....");
+        System.out.println(name + ": Transporting gems to TreasureRoom.....");
 
        for (Gem gem : container) {
          treasureRoomDoor.addValuable(gem);
          catalogue.log(name + ": Deposited " + gem.getName() + " worth" + gem.getValue());
+         System.out.println(name + ": Deposited " + gem.getName() + " worth" + gem.getValue());
        }
        treasureRoomDoor.releaseWriteAccess(name);
      }catch (InterruptedException e) {
        Thread.currentThread().interrupt();
        catalogue.log(name + ": Interrupted while transporting gems. Exiting...");
+        System.out.println(name + ": Interrupted while transporting gems. Exiting...");
        break;
      }catch (Exception e) {
        catalogue.log(name + ": Error while transporting gems: " + e.getMessage());
+        System.out.println(name + ": Error while transporting gems: " + e.getMessage());
      }
 
      container.clear();
      currentWorth = 0;
-     targetWorth = generateTargetWorth();
-      catalogue.log(name + ": Transporting done. Sleeping....");
+     targetWorth = generateRandomTargetWorth();
+     catalogue.log(name + ": Transporting done. New target worth for next transport set to " + targetWorth + ". Sleeping for now...");
+      System.out.println(name + ": Transporting done. New target worth for next transport set to " + targetWorth + ". Sleeping for now...");
 
       try {
         Thread.sleep(sleepTime);
       }catch (InterruptedException e) {
         Thread.currentThread().interrupt();
         catalogue.log(name + ": Interrupted while sleeping. Exiting...");
+        System.out.println(name + ": Interrupted while sleeping. Exiting...");
         break;
       }
     }

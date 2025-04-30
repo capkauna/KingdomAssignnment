@@ -22,6 +22,6 @@ public class MineSpecificGem implements MiningStrategy
 
   @Override public void rest() throws InterruptedException
   {
-    Thread.sleep(1000);
+    Thread.sleep(3000);
   }
 }

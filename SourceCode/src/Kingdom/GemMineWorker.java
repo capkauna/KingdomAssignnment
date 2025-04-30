@@ -24,29 +24,68 @@ public class GemMineWorker implements Runnable
         Gem gem = GemMine.mineGem();
         if (strategy.shouldMine(gem))
         {
-          gemDeposit.put(gem);
           switch (gem.getGemType())
           {
-            case COW -> Catalogue.getInstance().log("Who keeps bringing their cow to work?");
-            case GHOST -> Catalogue.getInstance().log("This mine is haunted! Someone call the Ghostbusters!");
-            case PRINCESS -> Catalogue.getInstance().log("This is no place for a princess!");
-            case UNICORN -> Catalogue.getInstance().log("Are there any princesses here? Why is there a unicorn?");
-            case WOODENCOIN -> Catalogue.getInstance().log("A wooden coin... It keeps saying it's a real coin.");
-            case GOLDNUGGET -> Catalogue.getInstance().log("Gold nugget! We're rich!");
-            default -> Catalogue.getInstance().log("Gem mined: " + gem.getName());
+            case COW ->
+            {
+              Catalogue.getInstance()
+                  .log("Who keeps bringing their cow to work?");
+              System.out.println(gem.getName() + "found in the mine! Whose is this?");
+            }
+
+            case GHOST -> {
+              Catalogue.getInstance()
+                  .log("This mine is haunted! Someone call the Ghostbusters!");
+              System.out.println(gem.getName() + " found in the mine! Spooky!");
+            }
+
+            case PRINCESS -> {
+              Catalogue.getInstance()
+                  .log("This is no place for a princess!");
+              System.out.println(gem.getName() + " found in the mine! Royalty spotted!");
+            }
+
+            case UNICORN -> {
+              Catalogue.getInstance()
+                  .log("Are there any princesses here? Why is there a unicorn?");
+              System.out.println(gem.getName() + " appeared! Nobody tell the King!");
+            }
+
+            case WOODENCOIN -> {
+              Catalogue.getInstance()
+                  .log("A wooden coin... It keeps saying it's a real coin.");
+              System.out.println(gem.getName() + "... who keeps making these?");
+            }
+
+            case GOLDNUGGET -> {
+              Catalogue.getInstance()
+                  .log("Gold nugget! We're rich!");
+              System.out.println(gem.getName() + "! We're RICH!");
+            }
+            case CHILD ->
+                {
+                  Catalogue.getInstance().log("The children yearn for the mines...");
+                  System.out.println(gem.getName() + "! Is our scary old man guard on lunch break again?");
+                }
+
+            default -> {
+              Catalogue.getInstance().log("Gem mined: " + gem.getName());
+              System.out.println(gem.getName() + " found in the mine.");
+            }
           }
+          gemDeposit.put(gem);
           strategy.rest();
         }
         else
         {
-          System.out.println("Gem thrown."); // For now
+          System.out.println("This miner can't tell what this gem is... Gem discarded."); // For now
           Thread.sleep(200);
         }
       }
       catch (InterruptedException e)
       {
         Thread.currentThread().interrupt();
-        System.out.println("Miner interrupted");
+        System.out.println("Miner is going home for the day.");
         break;
       }
       catch (Exception e)

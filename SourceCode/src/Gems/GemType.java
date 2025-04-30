@@ -10,9 +10,10 @@ public enum GemType
   GOLDNUGGET("Gold Nugget", 10, 165),
   WOODENCOIN("Wooden Coin", 1, 185),
   COW ("Cow", -1, 15),
-  PRINCESS("Princess", -12, 3),
+  PRINCESS("Princess", -20, 3),
   UNICORN("Unicorn", -35, 1),
-  GHOST("Scary ghost", -3,66);
+  GHOST("Scary ghost", -3,66),
+  CHILD("A child", -10, 7),;
 
 
   private final String name;

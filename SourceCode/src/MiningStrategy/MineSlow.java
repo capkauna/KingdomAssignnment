@@ -11,7 +11,7 @@ public class MineSlow implements MiningStrategy
 
   @Override public void rest() throws InterruptedException
   {
-    Thread.sleep(3000);
+    Thread.sleep(10000);
   }
 
 }
