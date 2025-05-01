@@ -33,7 +33,7 @@ public void put(Gem gem) throws InterruptedException{
     }
 
     queue.add(gem);
-    Catalogue.getInstance().log("Added " + gem.getName() + ".");
+    Catalogue.getInstance().log("Added " + gem.getName() + ". " + size() + " gems in deposit.");
     System.out.println("Added " + gem.getName() + ".");
     lock.notifyAll();
   }
@@ -41,7 +41,7 @@ public void put(Gem gem) throws InterruptedException{
 
 public Gem take() throws InterruptedException{
   synchronized (lock) {
-    while (queue.isEmpty()){
+    while (isEmpty()){
       Catalogue.getInstance().log("Deposit empty. Cart waiting... ");
       System.out.println("Deposit empty. Cart waiting... ");
       lock.wait();

@@ -4,7 +4,7 @@ import Gems.Gem;
 
 public class MineSlow implements MiningStrategy
 {
-  @Override public boolean shouldMine(Gem gem)
+  @Override public boolean shouldKeep(Gem gem)
   {
     return true;
   }

@@ -21,8 +21,8 @@ public class GemMineWorker implements Runnable
     {
       try
       {
-        Gem gem = GemMine.mineGem();
-        if (strategy.shouldMine(gem))
+        Gem gem = GemMine.mineGem();//there is no way a worker would know where a specific gem is, so they will decided whether they keep it or not, after mining
+        if (strategy.shouldKeep(gem))
         {
           switch (gem.getGemType())
           {
@@ -30,7 +30,7 @@ public class GemMineWorker implements Runnable
             {
               Catalogue.getInstance()
                   .log("Who keeps bringing their cow to work?");
-              System.out.println(gem.getName() + "found in the mine! Whose is this?");
+              System.out.println(gem.getName() + " found in the mine! Whose is this?");
             }
 
             case GHOST -> {
@@ -41,7 +41,7 @@ public class GemMineWorker implements Runnable
 
             case PRINCESS -> {
               Catalogue.getInstance()
-                  .log("This is no place for a princess!");
+                  .log(gem.getName() + "! This is no place for a princess!");
               System.out.println(gem.getName() + " found in the mine! Royalty spotted!");
             }
 
@@ -53,7 +53,7 @@ public class GemMineWorker implements Runnable
 
             case WOODENCOIN -> {
               Catalogue.getInstance()
-                  .log("A wooden coin... It keeps saying it's a real coin.");
+                  .log(gem.getName() + "... It keeps saying it's a real coin.");
               System.out.println(gem.getName() + "... who keeps making these?");
             }
 
@@ -79,7 +79,7 @@ public class GemMineWorker implements Runnable
         else
         {
           System.out.println("This miner can't tell what this gem is... Gem discarded."); // For now
-          Thread.sleep(200);
+          Thread.sleep(2000);
         }
       }
       catch (InterruptedException e)

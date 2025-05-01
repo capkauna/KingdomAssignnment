@@ -15,7 +15,7 @@ public class MineSpecificGem implements MiningStrategy
   }
 
 
-  @Override public boolean shouldMine(Gem gem)
+  @Override public boolean shouldKeep(Gem gem)
   {
     return gem.getName().equalsIgnoreCase(gemType.getName());
   }

@@ -796,3 +796,265 @@
 796. Cart 2: Picked up Emerald [worth 50]. Current total = 141
 797. Deposit empty. Cart waiting... 
 798. Deposit empty. Cart waiting... 
+799. === GEM MINING SIMULATION STARTED ===
+800. All workers and transporters started working.
+801. The King and the accountant are up and about.
+802. Billy was allowed access to looking at the Treasure Room.
+803. Gold nugget! We're rich!
+804. Gem mined: Amethyst
+805. Gold nugget! We're rich!
+806. Cart 2 starts with a collection target of 129
+807. Cart 1 starts with a collection target of 64
+808. King Louie is planning a party! He needs 136 worth of gems.
+809. Looking at all the gems in the Treasure Room.0 gems found.
+810.  . . . Counting . . .
+811. Added Gold Nugget.
+812. Taking Gold Nugget from deposit. 
+813. Deposit empty. Cart waiting... 
+814. Added Gold Nugget.
+815. Added Amethyst.
+816. Taking Gold Nugget from deposit. 
+817. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 30
+818. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 30
+819. Taking Amethyst from deposit. 
+820. Cart 1: Picked up Amethyst [worth 20]. Current total = 50
+821. Deposit empty. Cart waiting... 
+822. Deposit empty. Cart waiting... 
+823. Gold nugget! We're rich!
+824. Added Gold Nugget.
+825. Taking Gold Nugget from deposit. 
+826. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 60
+827. Deposit empty. Cart waiting... 
+828. Deposit empty. Cart waiting... 
+829. Gem mined: Amethyst
+830. Added Amethyst.
+831. Taking Amethyst from deposit. 
+832. Deposit empty. Cart waiting... 
+833. Cart 1: Picked up Amethyst [worth 20]. Current total = 70
+834. Cart 1 reached collection target, total worth = 70
+835. Accountant Billy counted total worth: 0
+836. Billy finished looking through the Treasure Room.
+837. Louie was given handling access to the Treasure Room.
+838. No gems in the Treasure Room.
+839. King Louie didn't have enough gems... CANCELING PARTY :(
+840. Gem mined: Emerald
+841. Added Emerald.
+842. Taking Emerald from deposit. 
+843. Cart 2: Picked up Emerald [worth 50]. Current total = 110
+844. Deposit empty. Cart waiting... 
+845. Gold nugget! We're rich!
+846. Gold nugget! We're rich!
+847. Added Gold Nugget.
+848. Taking Gold Nugget from deposit. 
+849. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 140
+850. Added Gold Nugget.
+851. Cart 2 reached collection target, total worth = 140
+852. Gold nugget! We're rich!
+853. Added Gold Nugget.
+854. A wooden coin... It keeps saying it's a real coin.
+855. Added Wooden Coin.
+856. Gem mined: Sapphire
+857. Added Sapphire.
+858. Gold nugget! We're rich!
+859. Added Gold Nugget.
+860. Gold nugget! We're rich!
+861. Added Gold Nugget.
+862. Gold nugget! We're rich!
+863. Added Gold Nugget.
+864. Gold nugget! We're rich!
+865. Added Gold Nugget.
+866. Gem mined: Amethyst
+867. Added Amethyst.
+868. Gold nugget! We're rich!
+869. Added Gold Nugget.
+870. This mine is haunted! Someone call the Ghostbusters!
+871. Added Scary ghost.
+872. Gem mined: Emerald
+873. Added Emerald.
+874. Gem mined: Amethyst
+875. Added Amethyst.
+876. Gold nugget! We're rich!
+877. Added Gold Nugget.
+878. Louie finished managing the Treasure Room.
+879. Cart 1 was given handling access to the Treasure Room.
+880. Cart 1 is transporting gems to TreasureRoom...
+881. Gold Nugget was added to the Treasure Room.
+882. Cart 1 deposited Gold Nugget [worth 30]
+883. Amethyst was added to the Treasure Room.
+884. Cart 1 deposited Amethyst [worth 20]
+885. Amethyst was added to the Treasure Room.
+886. Cart 1 deposited Amethyst [worth 20]
+887. Cart 1 finished managing the Treasure Room.
+888. Billy was allowed access to looking at the Treasure Room.
+889. Looking at all the gems in the Treasure Room.3 gems found.
+890.  . . . Counting . . .
+891. Cart 1: Transporting done. New target worth for next transport set to 52. Sleeping for now...
+892. Gold nugget! We're rich!
+893. Added Gold Nugget.
+894. A wooden coin... It keeps saying it's a real coin.
+895. Added Wooden Coin.
+896. Gold nugget! We're rich!
+897. Added Gold Nugget.
+898. Cart 1 starts with a collection target of 52
+899. Taking Gold Nugget from deposit. 
+900. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 30
+901. Taking Gold Nugget from deposit. 
+902. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 60
+903. Cart 1 reached collection target, total worth = 60
+904. Gem mined: Amethyst
+905. Added Amethyst.
+906. Accountant Billy counted total worth: 70
+907. Billy finished looking through the Treasure Room.
+908. Cart 2 was given handling access to the Treasure Room.
+909. Cart 2 is transporting gems to TreasureRoom...
+910. Gold Nugget was added to the Treasure Room.
+911. Cart 2 deposited Gold Nugget [worth 30]
+912. Gold Nugget was added to the Treasure Room.
+913. Cart 2 deposited Gold Nugget [worth 30]
+914. Emerald was added to the Treasure Room.
+915. Cart 2 deposited Emerald [worth 50]
+916. Gold Nugget was added to the Treasure Room.
+917. Cart 2 deposited Gold Nugget [worth 30]
+918. Cart 2 finished managing the Treasure Room.
+919. Cart 2: Transporting done. New target worth for next transport set to 79. Sleeping for now...
+920. Cart 1 was given handling access to the Treasure Room.
+921. Cart 1 is transporting gems to TreasureRoom...
+922. Gold Nugget was added to the Treasure Room.
+923. Cart 1 deposited Gold Nugget [worth 30]
+924. Gold Nugget was added to the Treasure Room.
+925. Cart 1 deposited Gold Nugget [worth 30]
+926. Cart 1 finished managing the Treasure Room.
+927. Cart 1: Transporting done. New target worth for next transport set to 130. Sleeping for now...
+928. Gem mined: Amethyst
+929. Added Amethyst.
+930. Cart 2 starts with a collection target of 79
+931. Taking Wooden Coin from deposit. 
+932. Cart 2: Picked up Wooden Coin [worth 1]. Current total = 1
+933. Taking Sapphire from deposit. 
+934. Cart 2: Picked up Sapphire [worth 70]. Current total = 71
+935. Taking Gold Nugget from deposit. 
+936. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 101
+937. Cart 2 reached collection target, total worth = 101
+938. Cart 2 was given handling access to the Treasure Room.
+939. Cart 2 is transporting gems to TreasureRoom...
+940. Wooden Coin was added to the Treasure Room.
+941. Cart 2 deposited Wooden Coin [worth 1]
+942. Sapphire was added to the Treasure Room.
+943. Cart 2 deposited Sapphire [worth 70]
+944. Gold Nugget was added to the Treasure Room.
+945. Cart 2 deposited Gold Nugget [worth 30]
+946. Cart 2 finished managing the Treasure Room.
+947. Cart 2: Transporting done. New target worth for next transport set to 97. Sleeping for now...
+948. Gold nugget! We're rich!
+949. Cart 1 starts with a collection target of 130
+950. Added Gold Nugget.
+951. Taking Gold Nugget from deposit. 
+952. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 30
+953. Taking Gold Nugget from deposit. 
+954. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 60
+955. Taking Gold Nugget from deposit. 
+956. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 90
+957. Taking Amethyst from deposit. 
+958. Cart 1: Picked up Amethyst [worth 20]. Current total = 110
+959. Taking Gold Nugget from deposit. 
+960. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 140
+961. Cart 1 reached collection target, total worth = 140
+962. Cart 1 was given handling access to the Treasure Room.
+963. Cart 1 is transporting gems to TreasureRoom...
+964. Gold Nugget was added to the Treasure Room.
+965. Cart 1 deposited Gold Nugget [worth 30]
+966. Gold Nugget was added to the Treasure Room.
+967. Cart 1 deposited Gold Nugget [worth 30]
+968. Gold Nugget was added to the Treasure Room.
+969. Cart 1 deposited Gold Nugget [worth 30]
+970. Amethyst was added to the Treasure Room.
+971. Cart 1 deposited Amethyst [worth 20]
+972. Gold Nugget was added to the Treasure Room.
+973. Cart 1 deposited Gold Nugget [worth 30]
+974. Cart 1 finished managing the Treasure Room.
+975. Cart 1: Transporting done. New target worth for next transport set to 92. Sleeping for now...
+976. This mine is haunted! Someone call the Ghostbusters!
+977. Added Scary ghost.
+978. King Louie is planning a party! He needs 94 worth of gems.
+979. Louie was given handling access to the Treasure Room.
+980. Gold Nugget was taken from the Treasure Room.
+981. Cart 2 starts with a collection target of 97
+982. Taking Scary ghost from deposit. 
+983. Cart 2: Picked up Scary ghost [worth -3]. Current total = -3
+984. Taking Emerald from deposit. 
+985. Cart 2: Picked up Emerald [worth 50]. Current total = 47
+986. Taking Amethyst from deposit. 
+987. Cart 2: Picked up Amethyst [worth 20]. Current total = 67
+988. Taking Gold Nugget from deposit. 
+989. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 97
+990. Cart 2 reached collection target, total worth = 97
+991. Cart 1 starts with a collection target of 92
+992. Taking Gold Nugget from deposit. 
+993. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 30
+994. Taking Wooden Coin from deposit. 
+995. Cart 1: Picked up Wooden Coin [worth 1]. Current total = 31
+996. Taking Gold Nugget from deposit. 
+997. Cart 1: Picked up Gold Nugget [worth 30]. Current total = 61
+998. Taking Amethyst from deposit. 
+999. Cart 1: Picked up Amethyst [worth 20]. Current total = 81
+1000. Taking Amethyst from deposit. 
+1001. Cart 1: Picked up Amethyst [worth 20]. Current total = 101
+1002. Cart 1 reached collection target, total worth = 101
+1003. Gem mined: Sapphire
+1004. Added Sapphire.
+1005. Gold nugget! We're rich!
+1006. Added Gold Nugget.
+1007. Gold nugget! We're rich!
+1008. Added Gold Nugget.
+1009. Amethyst was taken from the Treasure Room.
+1010. A wooden coin... It keeps saying it's a real coin.
+1011. Added Wooden Coin.
+1012. Gem mined: Ruby
+1013. Added Ruby.
+1014. Gold nugget! We're rich!
+1015. Added Gold Nugget.
+1016. Gold nugget! We're rich!
+1017. Added Gold Nugget.
+1018. Gem mined: Sapphire
+1019. Added Sapphire.
+1020. Amethyst was taken from the Treasure Room.
+1021. Gem mined: Emerald
+1022. Added Emerald.
+1023. Gold nugget! We're rich!
+1024. Added Gold Nugget.
+1025. Gem mined: Amethyst
+1026. Added Amethyst.
+1027. Gold Nugget was taken from the Treasure Room.
+1028. King Louie collected enough gems: 100. THROWING PARTY! :)
+1029. Louie finished managing the Treasure Room.
+1030. Cart 2 was given handling access to the Treasure Room.
+1031. Cart 2 is transporting gems to TreasureRoom...
+1032. Scary ghost was added to the Treasure Room.
+1033. Cart 2 deposited Scary ghost [worth -3]
+1034. Emerald was added to the Treasure Room.
+1035. Cart 2 deposited Emerald [worth 50]
+1036. Amethyst was added to the Treasure Room.
+1037. Cart 2 deposited Amethyst [worth 20]
+1038. Gold Nugget was added to the Treasure Room.
+1039. Cart 2 deposited Gold Nugget [worth 30]
+1040. Cart 2 finished managing the Treasure Room.
+1041. Cart 2: Transporting done. New target worth for next transport set to 109. Sleeping for now...
+1042. Billy was allowed access to looking at the Treasure Room.
+1043. Looking at all the gems in the Treasure Room.17 gems found.
+1044.  . . . Counting . . .
+1045. Are there any princesses here? Why is there a unicorn?
+1046. Added Unicorn.
+1047. Gold nugget! We're rich!
+1048. Added Gold Nugget.
+1049. Cart 2 starts with a collection target of 109
+1050. Taking Gold Nugget from deposit. 
+1051. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 30
+1052. Taking Scary ghost from deposit. 
+1053. Cart 2: Picked up Scary ghost [worth -3]. Current total = 27
+1054. Taking Sapphire from deposit. 
+1055. Cart 2: Picked up Sapphire [worth 70]. Current total = 97
+1056. Taking Gold Nugget from deposit. 
+1057. Cart 2: Picked up Gold Nugget [worth 30]. Current total = 127
+1058. Cart 2 reached collection target, total worth = 127
+1059. Who keeps bringing their cow to work?
+1060. Added Cow.

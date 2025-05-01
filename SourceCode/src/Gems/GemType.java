@@ -8,9 +8,9 @@ public enum GemType
   SAPPHIRE("Sapphire", 70, 35),
   AMETHYST("Amethyst", 20, 100),
   GOLDNUGGET("Gold Nugget", 30, 165),
-  WOODENCOIN("Wooden Coin", 1, 100),
+  WOODENCOIN("A wooden coin", 1, 100),
   COW ("Cow", -1, 15),
-  PRINCESS("Princess", -20, 3),
+  PRINCESS("A princess", -20, 3),
   UNICORN("Unicorn", -35, 1),
   GHOST("Scary ghost", -3,16),
   CHILD("A child", -10, 7),;

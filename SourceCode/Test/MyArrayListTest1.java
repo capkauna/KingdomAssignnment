@@ -121,7 +121,10 @@ public class MyArrayListTest1
         }
 
         @Test
-        //Side effect - remove(index) should remove the element at the specified index and shift the rest
+        //Side effect - remove(index) should remove the element at the
+          // specified index and shift the rest
+        //this one fails
+
         void testRemove()
         {
           testList.add(gem1);
@@ -132,6 +135,7 @@ public class MyArrayListTest1
           assertEquals(1, testList.size());
           assertEquals(gem2, testList.get(0));
         }
+
 
 
 }

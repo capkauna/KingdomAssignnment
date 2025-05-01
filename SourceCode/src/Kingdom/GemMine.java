@@ -34,6 +34,7 @@ public class GemMine
   public static Gem getGem(String name) {
     return gemMap.get(name);//this returns the exact gem object, but that's boring and unrealistic
   }
+
   public static Gem mineGem(){
     int index = random.nextInt(weightedGems.size());//this is far more believable and fun
     return weightedGems.get(index);
