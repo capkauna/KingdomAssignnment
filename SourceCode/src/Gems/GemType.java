@@ -11,7 +11,7 @@ public enum GemType
   WOODENCOIN("A wooden coin", 1, 100),
   COW ("Cow", -1, 15),
   PRINCESS("A princess", -20, 3),
-  UNICORN("Unicorn", -35, 1),
+  UNICORN("Unicorn", -350, 1),
   GHOST("Scary ghost", -3,16),
   CHILD("A child", -10, 7),;
 

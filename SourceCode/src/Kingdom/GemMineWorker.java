@@ -21,7 +21,7 @@ public class GemMineWorker implements Runnable
     {
       try
       {
-        Gem gem = GemMine.mineGem();//there is no way a worker would know where a specific gem is, so they will decided whether they keep it or not, after mining
+        Gem gem = GemMine.mineGem();//there is no way a worker would know where a specific gem is, so they will decide whether they keep it or not, after mining
         if (strategy.shouldKeep(gem))
         {
           switch (gem.getGemType())
@@ -47,8 +47,9 @@ public class GemMineWorker implements Runnable
 
             case UNICORN -> {
               Catalogue.getInstance()
-                  .log("Are there any princesses here? Why is there a unicorn?");
-              System.out.println(gem.getName() + " appeared! Nobody tell the King!");
+                  .log(gem.getName() + " was sighted! It ran away somewhere...");
+              System.out.println(gem.getName() + " was sighted! Nobody tell the King!");
+              continue;//a unicorn cannot be contained, so the workers will let it go
             }
 
             case WOODENCOIN -> {
