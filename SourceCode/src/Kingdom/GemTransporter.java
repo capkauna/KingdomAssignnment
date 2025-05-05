@@ -118,60 +118,6 @@ Make sure the List in GemTransporter is cleared when don
       }
     }
   }
-  //here a lil confused, need to think
-//  @Override public void run()
-//  {
-//    while (true)
-//    {
-//     catalogue.log(name + " starts with a collection target of " + targetWorth);
-//
-//     try{
-//       while (currentWorth < targetWorth) {
-//         Gem gem = gemDeposit.take();
-//         container.add(gem);
-//         currentWorth += gem.getValue();
-//         catalogue.log(name + ": Picked up " + gem.getName() + " [worth " + gem.getValue() + "]. Current total = " + currentWorth);
-//         System.out.println(name + ": Picked up " + gem.getName() + " [worth " + gem.getValue() + "]. Current total = " + currentWorth);
-//       }
-//        catalogue.log(name + " reached collection target, total worth = " + currentWorth);
-//        System.out.println(name + "  reached collection target, total worth = " + currentWorth);
-//
-//       treasureRoomDoor.acquireWriteAccess(name);
-//       catalogue.log(name + " is transporting gems to TreasureRoom...");
-//        System.out.println(name + " is transporting gems to the Treasure Room...");
-//
-//       for (Gem gem : container) {
-//         treasureRoomDoor.addValuable(gem);
-//         catalogue.log(name + " deposited " + gem.getName() + " [worth " + gem.getValue() + "]");
-//          System.out.println(name + " deposited " + gem.getName() + " [worth " + gem.getValue() + "]");
-//       }
-//       treasureRoomDoor.releaseWriteAccess(name);
-//     }catch (InterruptedException e) {
-//       Thread.currentThread().interrupt();
-//       catalogue.log(name + " was interrupted while transporting gems. Exiting...");
-//        System.out.println(name + "was interrupted while transporting gems. Exiting...");
-//       break;
-//     }catch (Exception e) {
-//       catalogue.log(name + " toppled off the tracks because " + e.getMessage());
-//        System.out.println(name + " toppled off the tracks because " + e.getMessage());
-//     }
-//
-//     container.clear();
-//     currentWorth = 0;
-//     targetWorth = generateRandomTargetWorth();
-//     catalogue.log(name + ": Transporting done. New target worth for next transport set to " + targetWorth + ". Sleeping for now...");
-//      System.out.println(name + ": Transporting done. New target worth for next transport set to " + targetWorth + ". Sleeping for now...");
-//
-//      try {
-//        Thread.sleep(sleepTime);
-//      }catch (InterruptedException e) {
-//        Thread.currentThread().interrupt();
-//        catalogue.log(name + " was interrupted from sleeping. Exiting...");
-//        System.out.println(name + " was interrupted from sleeping. Exiting...");
-//        break;
-//      }
-//    }
-//  }
 
 
 }
