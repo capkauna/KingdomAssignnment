@@ -137,5 +137,33 @@ public class MyArrayListTest1
         }
 
 
+// should be false but is true
+  // test failed
+  @Test
+  void testIsFullAlwaysFalse() {
+    assertFalse(testList.isFull(), "isFull() should return false");
+  }
+
+  @Test
+  //null handling - add null
+  // test passed
+  void testAddNull() {
+    testList.add(null);
+    assertEquals(1, testList.size());
+    assertNull(testList.get(0));
+  }
+
+  @Test
+  //toString format should format list properly
+  //test passed
+  void testToStringFormat() {
+    testList.add(gem1);
+    testList.add(gem2);
+    String output = testList.toString();
+    assertTrue(output.startsWith("{") && output.endsWith("}"));
+    assertTrue(output.contains(","));
+  }
+
+
 
 }
