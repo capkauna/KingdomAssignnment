@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MyArrayListTest1
 {
   private MyArrayList<Gem> testList;
-  private Gem gem1,gem2,gem3;
+  private Gem gem1,gem2,gem3, gem4;
 
   @BeforeEach
   public void setUp()
