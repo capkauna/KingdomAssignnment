@@ -30,6 +30,7 @@ Include relevant printouts using the Logger.Catalogue class.
   private TreasureRoomDoor treasureRoomDoor;
   private String name;
   private Random random;
+  private Catalogue catalogue = Catalogue.getInstance();
 
   public King(TreasureRoomDoor treasureRoomDoor, String name)
   {
@@ -43,7 +44,7 @@ Include relevant printouts using the Logger.Catalogue class.
     while (true) {
       try {
         int partyCost = random.nextInt(101) + 50; // between 50 and 150
-        Catalogue.getInstance().log("King " + name + " is planning a party! He needs " + partyCost + " worth of gems.");
+        catalogue.log("King " + name + " is planning a party! He needs " + partyCost + " worth of gems.");
 
         treasureRoomDoor.acquireWriteAccess(name);
         try {
@@ -63,9 +64,9 @@ Include relevant printouts using the Logger.Catalogue class.
           }
 
           if (totalGemsCollected >= partyCost) {
-            Catalogue.getInstance().log("King " + name + " collected enough gems: " + totalGemsCollected + ". THROWING PARTY! :)");
+            catalogue.log("King " + name + " collected enough gems: " + totalGemsCollected + ". THROWING PARTY! :)");
           } else {
-            Catalogue.getInstance().log("King " + name + " didn't have enough gems... CANCELING PARTY :(");
+            catalogue.log("King " + name + " didn't have enough gems... CANCELING PARTY :(");
             for (Gem v : gatheredGems) {
               treasureRoomDoor.addValuable(v);
             }
@@ -78,68 +79,11 @@ Include relevant printouts using the Logger.Catalogue class.
         Thread.sleep(4000); // King sleeps after the party
       } catch (InterruptedException e) {
         Thread.currentThread().interrupt();
-        Catalogue.getInstance().log(name + " was interrupted from planning the party. Exiting...");
+        catalogue.log(name + " was interrupted from planning the party. Exiting...");
         break;
       }
     }
   }
 
-//  @Override public void run()
-//  {
-//    while (true){
-//      try{
-//
-//        int partyCost = random.nextInt(101) + 50; // between 50 and 150
-//        Catalogue.getInstance().log("King " + name + " is planning a party! He needs " + partyCost + " worth of gems.");
-//
-//        treasureRoomDoor.acquireWriteAccess(name);
-//
-//        Gem gem;
-//        int totalGemsCollected = 0;
-//        List<Gem> gatheredGems = new ArrayList<>();
-//
-//        while ((gem = treasureRoomDoor.retrieveValuable())!=null)
-//        {
-//          gatheredGems.add(gem);
-//          totalGemsCollected+=gem.getValue();
-//
-//          if(totalGemsCollected>=partyCost){
-//            break;
-//          }
-//
-//          //Select gem time simulation
-//          Thread.sleep(2000);
-//
-//          if (totalGemsCollected >= partyCost)
-//          {
-//            Catalogue.getInstance().log("King "+name+" collected enough gems: "+totalGemsCollected+". THROWING PARTY! :) ");
-//            System.out.println("King "+name+" collected enough gems: "+totalGemsCollected+". THROWING PARTY! :) ");
-//          }else{
-//            Catalogue.getInstance().log("King "+name+" didn't have enough gems... : "+totalGemsCollected+". CANCELING PARTY :( ");
-//            System.out.println("King "+name+" didn't have enough gems... : "+totalGemsCollected+". CANCELING PARTY :( ");
-//            for (Gem v: gatheredGems)
-//            {
-//              // Putting the gems back since they were not spent and simulate the time it takes to put them back
-//              treasureRoomDoor.addValuable(v);
-//            }
-//            Catalogue.getInstance().log("Putting gems back...");
-//            System.out.println("Putting gems back...");
-//            Thread.sleep(10000);
-//          }
-//
-//        }
-//
-//        treasureRoomDoor.releaseWriteAccess(name);
-//        Catalogue.getInstance().log("King "+name+" is eepy and takes a nap (release write access).");
-//        System.out.println("King "+name+" is eepy and takes a nap (release write access).");
-//        Thread.sleep(4000);
-//
-//      }catch (InterruptedException e){
-//        Thread.currentThread().interrupt();
-//        Catalogue.getInstance().log(name + " was interrupted from planning the party. Exiting...");
-//        e.printStackTrace();
-//      }
-//    }
-//
-//  }
+
 }
