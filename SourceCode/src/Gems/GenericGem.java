@@ -33,4 +33,12 @@ public class GenericGem implements Gem {
   public GemType getGemType() {
     return gemType;
   }
+  @Override
+  public String toString() {
+    return "Gem{" +
+            "name='" + name + '\'' +
+            ", value=" + value +
+            ", gemType=" + gemType.toString() +
+            '}';
+  }
 }

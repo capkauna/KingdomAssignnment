@@ -6,4 +6,6 @@ public interface Gem
   int getValue();
   int getWeight();
   GemType getGemType();
+
+  String toString();
 }
