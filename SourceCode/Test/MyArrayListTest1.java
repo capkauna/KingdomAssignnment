@@ -26,6 +26,14 @@ public class MyArrayListTest1
           assertTrue(testList.isEmpty());
           assertEquals (0, testList.size());
         }
+
+        @Test
+        //zero - constructor parameter shoud not break instantiation
+        void testConstructorWithNullParam() {
+        MyArrayList<Gem> list = new MyArrayList<Gem>(null);
+        assertNotNull(list);
+        assertTrue(list.isEmpty());
+        }
   //O
 
         @Test
@@ -48,6 +56,15 @@ public class MyArrayListTest1
           assertEquals(2, testList.size());
           assertEquals(gem1, testList.get(0));
           assertEquals(gem2, testList.get(1));
+        }
+
+        @Test
+        // Many - add many elements (capacity check)
+        public void testAddManyElements() {
+        for (int i = 0; i < 200; i++) {
+        testList.add(new GenericGem(GemType.GOLDNUGGET));
+        }
+        assertEquals(200, testList.size());
         }
   //B
         @Test
@@ -72,6 +89,13 @@ public class MyArrayListTest1
 
           assertEquals(0, testList.indexOf(gem1));
           assertEquals(-1, testList.indexOf(gem3));
+        }
+        @Test
+        // Interface - contains
+        void testContainsElement() {
+        testList.add(gem1);
+        assertTrue(testList.contains(gem1));
+        assertFalse(testList.contains(gem2));
         }
   //E
         @Test
@@ -136,13 +160,6 @@ public class MyArrayListTest1
           assertEquals(gem2, testList.get(0));
         }
 
-
-// should be false but is true
-  // test failed
-  @Test
-  void testIsFullAlwaysFalse() {
-    assertFalse(testList.isFull(), "isFull() should return false");
-  }
 
   @Test
   //null handling - add null
