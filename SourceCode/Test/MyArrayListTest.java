@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MyArrayListTest1
+public class MyArrayListTest
 {
   private MyArrayList<Gem> testList;
   private Gem gem1,gem2,gem3;
@@ -171,17 +171,13 @@ public class MyArrayListTest1
           testList.add(gem2);
           testList.add(gem3);
 
-          assertThrows(IndexOutOfBoundsException.class, () -> {
-            testList.add(4, gem3);
-          });
+          assertThrows(IndexOutOfBoundsException.class, () -> testList.add(4, gem3));
         }
         @Test
         //Exception - adding at negative index
         void testExceptionAddNegativeIndex()
         {
-          assertThrows(IndexOutOfBoundsException.class, () -> {
-            testList.add(-1, gem3);
-          });
+          assertThrows(IndexOutOfBoundsException.class, () -> testList.add(-1, gem3));
         }
 
         @Test
