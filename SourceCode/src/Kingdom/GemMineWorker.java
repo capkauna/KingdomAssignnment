@@ -7,6 +7,7 @@ public class GemMineWorker implements Runnable
 {
   private final BlockingQueue<Gem> gemDeposit;
   private final MiningStrategy strategy;
+  private Catalogue catalogue = Catalogue.getInstance();
 
   public GemMineWorker(BlockingQueue<Gem> gemDeposit, MiningStrategy strategy)
   {
@@ -28,49 +29,49 @@ public class GemMineWorker implements Runnable
           {
             case COW ->
             {
-              Catalogue.getInstance()
+              catalogue
                   .log("Who keeps bringing their cow to work?");
               System.out.println(gem.getName() + " found in the mine! Whose is this?");
             }
 
             case GHOST -> {
-              Catalogue.getInstance()
+              catalogue
                   .log("This mine is haunted! Someone call the Ghostbusters!");
               System.out.println(gem.getName() + " found in the mine! Spooky!");
             }
 
             case PRINCESS -> {
-              Catalogue.getInstance()
+              catalogue
                   .log(gem.getName() + "! This is no place for a princess!");
               System.out.println(gem.getName() + " found in the mine! Royalty spotted!");
             }
 
             case UNICORN -> {
-              Catalogue.getInstance()
+              catalogue
                   .log(gem.getName() + " was sighted! It ran away somewhere...");
               System.out.println(gem.getName() + " was sighted! Nobody tell the King!");
               continue;//a unicorn cannot be contained, so the workers will let it go
             }
 
             case WOODENCOIN -> {
-              Catalogue.getInstance()
+              catalogue
                   .log(gem.getName() + "... It keeps saying it's a real coin.");
               System.out.println(gem.getName() + "... who keeps making these?");
             }
 
             case GOLDNUGGET -> {
-              Catalogue.getInstance()
+              catalogue
                   .log("Gold nugget! We're rich!");
               System.out.println(gem.getName() + "! We're RICH!");
             }
             case CHILD ->
                 {
-                  Catalogue.getInstance().log("The children yearn for the mines...");
+                  catalogue.log("The children yearn for the mines...");
                   System.out.println(gem.getName() + "?! Is our scary old man guard on lunch break again?");
                 }
 
             default -> {
-              Catalogue.getInstance().log("Gem mined: " + gem.getName());
+             catalogue.log("Gem mined: " + gem.getName());
               System.out.println(gem.getName() + " found in the mine.");
             }
           }

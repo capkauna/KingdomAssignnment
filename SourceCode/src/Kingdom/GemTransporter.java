@@ -17,7 +17,7 @@ public class GemTransporter implements Runnable
   private final int minTargetWorth = 50;
   private final int maxTargetWorth = 200;
   private final int sleepTime = 1000; // 1 second
-  private final Catalogue catalogue;
+  private final Catalogue catalogue = Catalogue.getInstance();//will be replaced with Catalogue.getInstance()
   private String name = new String(); //i guess for loggin in acces method
 
 
@@ -29,7 +29,6 @@ public class GemTransporter implements Runnable
     this.container = new ArrayList<>();
     this.targetWorth = generateRandomTargetWorth();
     this.currentWorth = 0;
-    this.catalogue = Catalogue.getInstance();
     this.name = name;
   }
 

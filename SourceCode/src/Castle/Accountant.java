@@ -24,6 +24,7 @@ Include relevant printouts using the Logger.Catalogue class.
 
   private TreasureRoomDoor treasureRoomDoor;
   private String name;
+  private Catalogue catalogue = Catalogue.getInstance();
 
   public Accountant(TreasureRoomDoor treasureRoomDoor, String name)
   {
@@ -42,9 +43,9 @@ Include relevant printouts using the Logger.Catalogue class.
             totalValue += gem.getValue();
           }
 
-          Catalogue.getInstance().log(" . . . Counting . . .");
+          catalogue.log(" . . . Counting . . .");
           Thread.sleep(2000);
-          Catalogue.getInstance().log("Accountant " + name + " counted total worth: " + totalValue);
+          catalogue.log("Accountant " + name + " counted total worth: " + totalValue);
         } finally {
           treasureRoomDoor.releaseReadAccess(name);
         }
@@ -52,7 +53,7 @@ Include relevant printouts using the Logger.Catalogue class.
         Thread.sleep(5000); // Sleep for a little while before counting again
       } catch (InterruptedException e) {
         Thread.currentThread().interrupt();
-        Catalogue.getInstance().log(name + " was interrupted while counting. Exiting...");
+        catalogue.log(name + " was interrupted while counting. Exiting...");
         break;
       }
     }

@@ -15,6 +15,7 @@ public class GemDeposit implements BlockingQueue<Gem>
 private final MyArrayList<Gem> queue;
 private final int capacity;
 private final Object lock = new Object();
+private final Catalogue catalogue;
 
 public GemDeposit(int capacity){
   if (capacity <= 0) {
@@ -22,18 +23,19 @@ public GemDeposit(int capacity){
   }
   this.queue = new MyArrayList<Gem>(capacity);
   this.capacity = capacity;
+  this.catalogue = Catalogue.getInstance();
 }
 
 public void put(Gem gem) throws InterruptedException{
   synchronized (lock) {
     while (queue.size() >= capacity) {
-      Catalogue.getInstance().log("Deposit full. Waiting to be emptied... ");
+      catalogue.log("Deposit full. Waiting to be emptied... ");
       System.out.println("Deposit full. Waiting to be emptied... ");
       lock.wait();
     }
 
     queue.add(gem);
-    Catalogue.getInstance().log("Added " + gem.getName() + ". " + size() + " gems in deposit.");
+    catalogue.log("Added " + gem.getName() + ". " + size() + " gems in deposit.");
     System.out.println("Added " + gem.getName() + ".");
     lock.notifyAll();
   }
@@ -42,12 +44,12 @@ public void put(Gem gem) throws InterruptedException{
 public Gem take() throws InterruptedException{
   synchronized (lock) {
     while (isEmpty()){
-      Catalogue.getInstance().log("Deposit empty. Cart waiting... ");
+      catalogue.log("Deposit empty. Cart waiting... ");
       System.out.println("Deposit empty. Cart waiting... ");
       lock.wait();
     }
     Gem gem = queue.remove(0);
-    Catalogue.getInstance().log("Taking " + gem.getName() + " from deposit. ");
+    catalogue.log("Taking " + gem.getName() + " from deposit. ");
     System.out.println("Taking " + gem.getName() + " from deposit. ");
     lock.notifyAll();
     return gem;
